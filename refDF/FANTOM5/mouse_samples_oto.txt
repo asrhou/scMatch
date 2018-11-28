@@ -1,0 +1,1029 @@
+{
+    "Aortic Smooth Muscle cell": [
+        "Mouse Aortic Smooth Muscle cells - differentiated, biol_rep1.CNhs11055.11484-119D8", 
+        "Mouse Aortic Smooth Muscle cells - differentiated, biol_rep2.CNhs11056.11485-119D9", 
+        "Mouse Aortic Smooth Muscle cells, donor1.CNhs11297.11299-117B3"
+    ], 
+    "Astrocyte": [
+        "Mouse Astrocytes - cerebellar, donor1.CNhs13077.11708-123B7", 
+        "Mouse Astrocytes - cerebellar, donor2.CNhs12076.11550-120C2", 
+        "Mouse Astrocytes - hippocampus, donor1.CNhs12129.11709-123B8", 
+        "Mouse Astrocytes - hippocampus, donor2.CNhs12077.11551-120C3", 
+        "Mouse Astrocytes, donor2.CNhs12078.11552-120C4", 
+        "Mouse Astrocytes, donor3.CNhs12107.11633-122C4", 
+        "Astrocytes, donor1.CNhs11915.11710-123B9"
+    ], 
+    "Atoh1+ Inner ear hair cell": [
+        "Atoh1+ Inner ear hair cells - organ of corti, pool1.CNhs12533.12158-128G7"
+    ], 
+    "CD19+ B cell": [
+        "Mouse CD19+ B Cells, donor1.CNhs13531.11856-125A2"
+    ], 
+    "CD4+ T cell": [
+        "Mouse CD4+ T Cells, donor1.CNhs13509.11854-124I9"
+    ], 
+    "CD4+CD25+ regulatory T cell": [
+        "CD4+CD25+ regulatory T cells, pool2 (Balb_cAJcl).CNhs13221.11818-124E9", 
+        "CD4+CD25+ regulatory T cells, PMA and ionomycin stimulation, 02hr, pool1 (BalbcA).CNhs14160.11946-126B2", 
+        "CD4+CD25+ regulatory T cells, PMA and ionomycin stimulation, 02hr, pool1 (C57BL 6J).CNhs14142.11945-126B1", 
+        "CD4+CD25+ regulatory T cells, antiCD3 CD28 stimulation, 06hr, pool1 (BalbcA).CNhs14158.11943-126A8", 
+        "CD4+CD25+ regulatory T cells, antiCD3 CD28 stimulation, 06hr, pool1 (C57BL 6J).CNhs14159.11944-126A9", 
+        "CD4+CD25+ regulatory T cells, pool1 (C57BL_6J).CNhs13913.11814-124E5"
+    ], 
+    "CD4+CD25-CD44- naive conventional T cell": [
+        "CD4+CD25-CD44- naive conventional T cells, PMA and ionomycin stimulation, 02hr, pool1 (C57BL_6J).CNhs13219.11816-124E7", 
+        "CD4+CD25-CD44- naive conventional T cells, PMA and ionomycin stimulation, 02hr, pool2 (Balb_cAJcl).CNhs13226.11820-124F2", 
+        "CD4+CD25-CD44- naive conventional T cells, antiCD3_CD28 stimulation, 06hr, pool1 (C57BL_6J).CNhs13218.11815-124E6", 
+        "CD4+CD25-CD44- naive conventional T cells, antiCD3_CD28 stimulation, 06hr, pool2 (Balb_cAJcl).CNhs13225.11819-124F1", 
+        "CD4+CD25-CD44- naive conventional T cells, pool1 (C57BL_6J).CNhs13217.11813-124E4", 
+        "CD4+CD25-CD44- naive conventional T cells, pool2 (Balb_cAJcl).CNhs13220.11817-124E8"
+    ], 
+    "CD41+ megakaryocyte": [
+        "CD41+ megakaryocyte cancer, donor1.CNhs13079.11774-124A1", 
+        "CD41+ megakaryocyte cancer, donor2.CNhs13213.11776-124A3", 
+        "CD41+ megakaryocyte cancer, donor3.CNhs13506.11778-124A5", 
+        "CD41+ megakaryocyte control, donor1.CNhs13212.11775-124A2", 
+        "CD41+ megakaryocyte control, donor2.CNhs13214.11777-124A4", 
+        "CD41+ megakaryocyte control, donor3.CNhs13201.11779-124A6"
+    ], 
+    "CD8+ T cell": [
+        "Mouse CD8+ T Cells, donor1.CNhs13511.11855-125A1"
+    ], 
+    "Cardiac myocyte": [
+        "Mouse Cardiac Myocytes, donor1.CNhs12355.11711-123C1", 
+        "Mouse Cardiac Myocytes, donor2.CNhs12356.11729-123E1", 
+        "Mouse Cardiac Myocytes, donor3.CNhs12353.11634-122C5"
+    ], 
+    "EBF KO Hematopoietic progenitor cell": [
+        "EBF KO HPCs induced to T cell, 00hr00min, biol_rep1.CNhs11058.12972-138H2", 
+        "EBF KO HPCs induced to T cell, 00hr00min, biol_rep2.CNhs12980.12988-138I9", 
+        "EBF KO HPCs induced to T cell, 00hr00min, biol_rep3.CNhs13687.13004-139B7"
+    ], 
+    "Follicle Associated Epithelium": [
+        "Follicle Associated Epithelium, pool2.CNhs13211.10262-104D1", 
+        "Follicle Associated Epithelium, pool3.CNhs13200.10263-104D2"
+    ], 
+    "GP2+ M cell": [
+        "GP2+ M cell, pool1.CNhs13228.11845-124H9", 
+        "GP2+ M cell, pool2.CNhs13231.11846-124I1", 
+        "GP2+ M cell, pool3.CNhs13240.11847-124I2"
+    ], 
+    "Granule cell": [
+        "Mouse Granule cells, donor1.CNhs12131.11713-123C3", 
+        "Mouse Granule cells, donor2.CNhs12357.11731-123E3", 
+        "Mouse Granule cells, donor3.CNhs12108.11636-122C7"
+    ], 
+    "Ileum epithelium": [
+        "Ileum epithelium, pool1.CNhs13199.10252-104B9", 
+        "Ileum epithelium, pool2.CNhs13232.10253-104C1", 
+        "Ileum epithelium, treated with RANKL, day03, pool3.CNhs13234.10260-104C8"
+    ], 
+    "Inner ear stem cell": [
+        "Inner ear stem cells, 1st generation stem cells, pool1.CNhs11929.12215-129E1", 
+        "Inner ear stem cells, 4th generation stem cells, pool1.CNhs12544.12216-129E2", 
+        "Inner ear stem cells, differentiation, day03, pool1.CNhs12189.12217-129E3", 
+        "Inner ear stem cells, differentiation, day10, pool1.CNhs12190.12218-129E4"
+    ], 
+    "J2E erythroblastic cell line": [
+        "J2E erythroblastic leukemia response to erythropoietin, 00hr00min, biol_rep1.CNhs12449.13063-139I3", 
+        "J2E erythroblastic leukemia response to erythropoietin, 00hr00min, biol_rep2.CNhs12668.13129-140G6", 
+        "J2E erythroblastic leukemia response to erythropoietin, 00hr00min, biol_rep3, tech_rep1.CNhs12770.13195-141E9", 
+        "J2E erythroblastic leukemia response to erythropoietin, 24hr, biol_rep3.CNhs12784.13209-141G5", 
+        "J2E erythroblastic leukemia response to erythropoietin, 24hr, biol_rep2.CNhs12682.13143-140I2", 
+        "J2E erythroblastic leukemia response to erythropoietin, 01hr20min, biol_rep1.CNhs12648.13068-139I8", 
+        "J2E erythroblastic leukemia response to erythropoietin, 48hr, biol_rep2.CNhs12683.13144-140I3", 
+        "J2E erythroblastic leukemia response to erythropoietin, 02hr00min, biol_rep3, tech_rep2.CNhs14548.13202-141F7", 
+        "J2E erythroblastic leukemia response to erythropoietin, 04hr, biol_rep2.CNhs12679.13140-140H8", 
+        "J2E erythroblastic leukemia response to erythropoietin, 00hr15min, biol_rep2.CNhs12669.13130-140G7", 
+        "J2E erythroblastic leukemia response to erythropoietin, 12hr, biol_rep1.CNhs12454.13076-140A7", 
+        "J2E erythroblastic leukemia response to erythropoietin, 03hr30min, biol_rep2.CNhs12678.13139-140H7", 
+        "J2E erythroblastic leukemia response to erythropoietin, 01hr40min, biol_rep2.CNhs12674.13135-140H3", 
+        "J2E erythroblastic leukemia response to erythropoietin, 01hr20min, biol_rep2.CNhs12673.13134-140H2", 
+        "J2E erythroblastic leukemia response to erythropoietin, 06hr, biol_rep2.CNhs12680.13141-140H9", 
+        "J2E erythroblastic leukemia response to erythropoietin, 02hr00min, biol_rep1.CNhs12650.13070-140A1", 
+        "J2E erythroblastic leukemia response to erythropoietin, 03hr00min, biol_rep3.CNhs12779.13204-141F9", 
+        "J2E erythroblastic leukemia response to erythropoietin, 04hr, biol_rep1.CNhs12452.13074-140A5", 
+        "J2E erythroblastic leukemia response to erythropoietin, 24hr, biol_rep1.CNhs12455.13077-140A8", 
+        "J2E erythroblastic leukemia response to erythropoietin, 00hr45min, biol_rep3.CNhs12773.13198-141F3", 
+        "J2E erythroblastic leukemia response to erythropoietin, 48hr, biol_rep1.CNhs12456.13078-140A9", 
+        "J2E erythroblastic leukemia response to erythropoietin, 01hr00min, biol_rep2.CNhs12672.13133-140H1", 
+        "J2E erythroblastic leukemia response to erythropoietin, 06hr, biol_rep1.CNhs12453.13075-140A6", 
+        "J2E erythroblastic leukemia response to erythropoietin, 00hr30min, biol_rep3.CNhs12772.13197-141F2", 
+        "J2E erythroblastic leukemia response to erythropoietin, 03hr00min, biol_rep1.CNhs12450.13072-140A3", 
+        "J2E erythroblastic leukemia response to erythropoietin, 02hr30min, biol_rep2.CNhs12676.13137-140H5", 
+        "J2E erythroblastic leukemia response to erythropoietin, 00hr15min, biol_rep3.CNhs12771.13196-141F1", 
+        "J2E erythroblastic leukemia response to erythropoietin, 01hr00min, biol_rep3.CNhs12774.13199-141F4", 
+        "J2E erythroblastic leukemia response to erythropoietin, 02hr00min, biol_rep2.CNhs12675.13136-140H4", 
+        "J2E erythroblastic leukemia response to erythropoietin, 12hr, biol_rep2, tech_rep2.CNhs14546.13142-140I1", 
+        "J2E erythroblastic leukemia response to erythropoietin, 03hr30min, biol_rep1.CNhs12451.13073-140A4", 
+        "J2E erythroblastic leukemia response to erythropoietin, 01hr40min, biol_rep1.CNhs12649.13069-139I9", 
+        "J2E erythroblastic leukemia response to erythropoietin, 00hr15min, biol_rep1.CNhs12644.13064-139I4", 
+        "J2E erythroblastic leukemia response to erythropoietin, 01hr00min, biol_rep1.CNhs12647.13067-139I7", 
+        "J2E erythroblastic leukemia response to erythropoietin, 03hr00min, biol_rep2.CNhs12677.13138-140H6", 
+        "J2E erythroblastic leukemia response to erythropoietin, 00hr45min, biol_rep1.CNhs12646.13066-139I6", 
+        "J2E erythroblastic leukemia response to erythropoietin, 03hr30min, biol_rep3.CNhs12780.13205-141G1", 
+        "J2E erythroblastic leukemia response to erythropoietin, 06hr, biol_rep3.CNhs12782.13207-141G3", 
+        "J2E erythroblastic leukemia response to erythropoietin, 48hr, biol_rep3.CNhs12785.13210-141G6", 
+        "J2E erythroblastic leukemia response to erythropoietin, 02hr30min, biol_rep1.CNhs12651.13071-140A2", 
+        "J2E erythroblastic leukemia response to erythropoietin, 00hr45min, biol_rep2.CNhs12671.13132-140G9", 
+        "J2E erythroblastic leukemia response to erythropoietin, 00hr30min, biol_rep1.CNhs12645.13065-139I5", 
+        "J2E erythroblastic leukemia response to erythropoietin, 04hr, biol_rep3.CNhs12781.13206-141G2", 
+        "J2E erythroblastic leukemia response to erythropoietin, 12hr, biol_rep3.CNhs12783.13208-141G4", 
+        "J2E erythroblastic leukemia response to erythropoietin, 01hr20min, biol_rep3.CNhs12775.13200-141F5", 
+        "J2E erythroblastic leukemia response to erythropoietin, 02hr30min, biol_rep3.CNhs12778.13203-141F8", 
+        "J2E erythroblastic leukemia response to erythropoietin, 00hr00min, biol_rep3, tech_rep2.CNhs14547.13195-141E9", 
+        "J2E erythroblastic leukemia response to erythropoietin, 01hr40min, biol_rep3.CNhs12776.13201-141F6"
+    ], 
+    "Lgr5 positive intestinal stem cell": [
+        "Lgr5 positive intestinal stem cells, pool1.CNhs12555.12228-129F5", 
+        "Lgr5 positive intestinal stem cells, pool2.CNhs12556.12229-129F6", 
+        "Lgr5 positive intestinal stem cells, pool3.CNhs12557.12230-129F7"
+    ], 
+    "MC1+Gr1+ myeloid-derived suppressor cell": [
+        "MC1+Gr1+ myeloid-derived suppressor cells cancer, donor1 (10,11,12 3LL).CNhs12539.12159-128G8", 
+        "MC1+Gr1+ myeloid-derived suppressor cells cancer, donor2 (0127 3LL).CNhs12198.12161-128H1", 
+        "MC1+Gr1+ myeloid-derived suppressor cells cancer, donor3 (0128 3LL).CNhs12542.12163-128H3", 
+        "MC1+Gr1+ myeloid-derived suppressor cells control, donor1 (4,5,6PBS).CNhs12540.12160-128G9", 
+        "MC1+Gr1+ myeloid-derived suppressor cells control, donor2 (0127 PBS).CNhs12541.12162-128H2", 
+        "MC1+Gr1+ myeloid-derived suppressor cells control, donor3 (0128 PBS).CNhs12543.12164-128H4"
+    ], 
+    "Meningeal cell": [
+        "Mouse Meningeal cells, donor1.CNhs12132.11716-123C6", 
+        "Mouse Meningeal cells, donor3.CNhs12109.11639-122D1", 
+        "Mouse Meningeal cells, donor2.CNhs12358.11734-123E6"
+    ], 
+    "Mesenchymal stem cell - bone marrow derived": [
+        "Mouse Mesenchymal stem cells - bone marrow derived, donor1.CNhs12628.11717-123C7", 
+        "Mouse Mesenchymal stem cells - bone marrow derived, donor2.CNhs12633.11735-123E7", 
+        "Mouse Mesenchymal stem cells - bone marrow derived, donor3.CNhs12616.11640-122D2"
+    ], 
+    "Mesoderm": [
+        "Mesoderm, embryo E8.5.CNhs14148.11947-126B3"
+    ], 
+    "Microglia": [
+        "Mouse Microglia, donor1.CNhs12629.11718-123C8", 
+        "Mouse Microglia, donor2.CNhs12634.11736-123E8"
+    ], 
+    "Neuron - cortical": [
+        "Mouse Neurons - cortical, donor1.CNhs12025.11724-123D5", 
+        "Mouse Neurons - cortical, donor2.CNhs11947.11742-123F5", 
+        "Mouse Neurons - cortical, donor3.CNhs12112.11647-122D9"
+    ], 
+    "Neuron - dorsal spinal cord": [
+        "Mouse Neurons - dorsal spinal cord, donor2.CNhs12635.11738-123F1", 
+        "Mouse Neurons - dorsal spinal cord, donor3.CNhs12618.11643-122D5"
+    ], 
+    "Neuron - hippocampal": [
+        "Mouse Neurons - hippocampal, donor1.CNhs12133.11721-123D2", 
+        "Mouse Neurons - hippocampal, donor2.CNhs12359.11739-123F2", 
+        "Mouse Neurons - hippocampal, donor3.CNhs12110.11644-122D6"
+    ], 
+    "Neuron - raphe": [
+        "Mouse Neurons - raphe, donor1.CNhs12631.11722-123D3", 
+        "Mouse Neurons - raphe, donor2.CNhs12636.11740-123F3", 
+        "Mouse Neurons - raphe, donor3.CNhs12619.11645-122D7"
+    ], 
+    "Neuron - spiral ganglion": [
+        "Neurons - spiral ganglion, pool1.CNhs14147.11959-126C6"
+    ], 
+    "Neuron - striatal": [
+        "Mouse Neurons - striatal, donor1.CNhs12134.11723-123D4", 
+        "Mouse Neurons - striatal, donor2.CNhs12360.11741-123F4", 
+        "Mouse Neurons - striatal, donor3.CNhs12111.11646-122D8"
+    ], 
+    "Neuron - substantia nigra": [
+        "Mouse Neurons - substantia nigra, donor4, tech_rep1.CNhs12612.11489-119E4", 
+        "Mouse Neurons - substantia nigra, donor5.CNhs12614.11490-119E5", 
+        "Mouse Neurons - substantia nigra, donor6.CNhs12643.11770-123I6", 
+        "Mouse Neurons - substantia nigra, donor4, tech_rep2.CNhs12821.11489-119E4", 
+        "Neurons - substantia nigra, donor5, tech_rep2.CNhs12923.11490-119E5"
+    ], 
+    "Neuron - ventral spinal cord": [
+        "Mouse Neurons - ventral spinal cord, donor1.CNhs12632.11725-123D6", 
+        "Mouse Neurons - ventral spinal cord, donor2.CNhs12638.11743-123F6", 
+        "Mouse Neurons - ventral spinal cord, donor3.CNhs12113.11648-122E1"
+    ], 
+    "Renal epithelial cell": [
+        "Mouse Renal epithelial cells, donor1.CNhs14555.11727-123D8"
+    ], 
+    "ST2 Mesenchymal stem cell": [
+        "ST2 (Mesenchymal stem cells) cells, medium change (without induction), 00hr, biol_rep1 (000hC4).CNhs11939.12338-130I7", 
+        "ST2 (Mesenchymal stem cells) cells, medium change (without induction), 00hr, biol_rep2 (000hC5).CNhs13275.12460-132E3", 
+        "ST2 (Mesenchymal stem cells) cells, medium change (without induction), 00hr, biol_rep3 (000hC6).CNhs13324.12582-133I8"
+    ], 
+    "Schwann cell": [
+        "Mouse Schwann, donor1.CNhs12507.11728-123D9", 
+        "Mouse Schwann, donor2.CNhs12573.11746-123F9"
+    ], 
+    "Sox2+ Supporting cell - organ of corti": [
+        "Sox2+ Supporting cells - organ of corti, pool1.CNhs12532.12157-128G6"
+    ], 
+    "Tracheal epithelial cell": [
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 000hr, biol_rep1.CNhs13739.13367-143G1", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 000hr, biol_rep2.CNhs13740.13368-143G2", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 000hr, biol_rep3.CNhs13741.13369-143G3", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 004hr, biol_rep1.CNhs13742.13370-143G4", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 004hr, biol_rep2.CNhs13743.13371-143G5", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 004hr, biol_rep3.CNhs13744.13372-143G6", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 008hr, biol_rep1.CNhs13745.13373-143G7", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 008hr, biol_rep2.CNhs13746.13374-143G8", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 008hr, biol_rep3.CNhs13747.13375-143G9", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 012hr, biol_rep1.CNhs13696.13376-143H1", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 012hr, biol_rep2.CNhs13748.13377-143H2", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 012hr, biol_rep3.CNhs13749.13378-143H3", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 016hr, biol_rep1.CNhs13750.13379-143H4", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 016hr, biol_rep2.CNhs13751.13380-143H5", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 016hr, biol_rep3.CNhs13752.13381-143H6", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 020hr, biol_rep1.CNhs13697.13382-143H7", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 020hr, biol_rep2.CNhs13753.13383-143H8", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 020hr, biol_rep3.CNhs13754.13384-143H9", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 024hr, biol_rep1.CNhs13755.13385-143I1", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 024hr, biol_rep2.CNhs13756.13386-143I2", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 024hr, biol_rep3.CNhs13757.13387-143I3", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 030hr, biol_rep1.CNhs13758.13388-143I4", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 030hr, biol_rep2.CNhs13759.13389-143I5", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 030hr, biol_rep3.CNhs13760.13390-143I6", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 036hr, biol_rep1.CNhs13762.13391-143I7", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 036hr, biol_rep2.CNhs13763.13392-143I8", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 036hr, biol_rep3.CNhs13764.13393-143I9", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 042hr, biol_rep1.CNhs13765.13394-144A1", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 042hr, biol_rep2.CNhs13766.13395-144A2", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 042hr, biol_rep3.CNhs13767.13396-144A3", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 048hr, biol_rep1.CNhs13768.13397-144A4", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 048hr, biol_rep2.CNhs13769.13398-144A5", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 048hr, biol_rep3.CNhs13770.13399-144A6", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 054hr, biol_rep1.CNhs13771.13400-144A7", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 054hr, biol_rep2.CNhs13772.13401-144A8", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 054hr, biol_rep3.CNhs13773.13402-144A9", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 060hr, biol_rep1.CNhs13774.13403-144B1", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 060hr, biol_rep2.CNhs13775.13404-144B2", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 060hr, biol_rep3.CNhs13776.13405-144B3", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 066hr, biol_rep1.CNhs13777.13406-144B4", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 066hr, biol_rep2.CNhs13778.13407-144B5", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 066hr, biol_rep3.CNhs13779.13408-144B6", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 072hr, biol_rep1.CNhs13780.13409-144B7", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 072hr, biol_rep2.CNhs13781.13410-144B8", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 072hr, biol_rep3.CNhs13782.13411-144B9", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 084hr, biol_rep1.CNhs13783.13412-144C1", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 084hr, biol_rep2.CNhs13784.13413-144C2", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 084hr, biol_rep3.CNhs13786.13414-144C3", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 096hr, biol_rep1.CNhs13787.13415-144C4", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 096hr, biol_rep2.CNhs13788.13416-144C5", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 096hr, biol_rep3.CNhs13789.13417-144C6", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 120hr, biol_rep1.CNhs13790.13418-144C7", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 120hr, biol_rep2.CNhs13791.13419-144C8", 
+        "Tracheal epithelial cells, differentiation to ciliated epithelial cells, 120hr, biol_rep3.CNhs13792.13420-144C9"
+    ], 
+    "adipocyte": [
+        "ST2 (Mesenchymal stem cells) cells, differentiation to adipocytes, day06, biol_rep1 (144hA1).CNhs13129.12322-130G9", 
+        "ST2 (Mesenchymal stem cells) cells, differentiation to adipocytes, day06, biol_rep2 (144hA2).CNhs13258.12444-132C5", 
+        "ST2 (Mesenchymal stem cells) cells, differentiation to adipocytes, day06, biol_rep3 (144hA3).CNhs13307.12566-133H1"
+    ], 
+    "adrenal gland": [
+        "accessory axillary lymph node, adult.CNhs10475.1063-29H9", 
+        "adrenal gland, adult.CNhs10508.49-24D7", 
+        "adrenal gland, embryo E14.CNhs11038.406-44C5", 
+        "adrenal gland, embryo E16.CNhs11004.1254-43D6", 
+        "adrenal gland, embryo E17.CNhs11043.1263-45I1", 
+        "adrenal gland, embryo E18.CNhs11026.1262-18F5", 
+        "adrenal gland, neonate N00.CNhs11191.1311-23C1", 
+        "adrenal gland, neonate N25.CNhs11223.1377-27I3"
+    ], 
+    "amnion": [
+        "amnion, adult pregnant day17.5.CNhs10488.583-22A8"
+    ], 
+    "aorta": [
+        "aorta, adult.CNhs10498.46-23H1"
+    ], 
+    "bone": [
+        "bone (os femoris), adult.CNhs10483.56-12G2", 
+        "bone (os femoris), neonate N02.CNhs11227.1985-43F5", 
+        "bone (os femoris), neonate N16.CNhs11225.1525-43A6", 
+        "bone (os femoris), neonate N20.CNhs11195.1350-25C3"
+    ], 
+    "cKit+ Sca1- lineage- (KSL stem cell)": [
+        "stem cell (cKit+ Sca1- lineage-) KSL, biol_rep1.CNhs12534.12121-128C6", 
+        "stem cell (cKit+ Sca1- lineage-) KSL, biol_rep2.CNhs12535.12124-128C9", 
+        "stem cell (cKit+ Sca1- lineage-) KSL, biol_rep3.CNhs12536.12127-128D3"
+    ], 
+    "cecum": [
+        "cecum, adult.CNhs10467.37-13H4"
+    ], 
+    "cerebellar granule cell": [
+        "cerebellar granule cells, embryo E13, biol_rep1 (E13R1).CNhs14143.13532-145G4", 
+        "cerebellar granule cells, embryo E13, biol_rep2 (E13R2).CNhs14144.13533-145G5", 
+        "cerebellar granule cells, embryo E13, biol_rep3 (E13R3).CNhs14146.13534-145G6", 
+        "cerebellar granule cells, embryo E15, biol_rep1 (E15R1).CNhs14162.13535-145G7", 
+        "cerebellar granule cells, embryo E15, biol_rep2 (E15R2).CNhs14163.13536-145G8", 
+        "cerebellar granule cells, embryo E15, biol_rep3 (E15R3).CNhs14164.13537-145G9", 
+        "cerebellar granule cells, embryo E18, biol_rep1 (E18R1).CNhs14165.13538-145H1", 
+        "cerebellar granule cells, embryo E18, biol_rep2 (E18R2).CNhs14166.13539-145H2", 
+        "cerebellar granule cells, embryo E18, biol_rep3 (E13R3).CNhs14167.13540-145H3"
+    ], 
+    "cerebellum": [
+        "cerebellum, adult.CNhs10494.15-8B2", 
+        "cerebellum, neonate N30.CNhs11135.1395-42I2", 
+        "cerebellum, embryo E11, biol_rep1 (E11R1).CNhs12956.10114-102E6", 
+        "cerebellum, embryo E11, biol_rep2 (E11R2).CNhs13002.10126-102F9", 
+        "cerebellum, embryo E11, biol_rep3 (E11R3).CNhs13014.10138-102H3", 
+        "cerebellum, embryo E12, biol_rep1 (E12R1).CNhs12957.10115-102E7", 
+        "cerebellum, embryo E12, biol_rep2 (E12R2).CNhs13003.10127-102G1", 
+        "cerebellum, embryo E12, biol_rep3 (E12R3).CNhs13015.10139-102H4", 
+        "cerebellum, embryo E13, biol_rep1 (E13R1).CNhs12958.10116-102E8", 
+        "cerebellum, embryo E13, biol_rep2 (E13R2).CNhs13004.10128-102G2", 
+        "cerebellum, embryo E13, biol_rep3 (E13R3).CNhs13016.10140-102H5", 
+        "cerebellum, embryo E14, biol_rep1 (E14R1).CNhs12960.10117-102E9", 
+        "cerebellum, embryo E14, biol_rep2 (E14R2).CNhs13005.10129-102G3", 
+        "cerebellum, embryo E14, biol_rep3 (E14R3).CNhs13017.10141-102H6", 
+        "cerebellum, embryo E15, biol_rep1 (E15R1).CNhs12961.10118-102F1", 
+        "cerebellum, embryo E15, biol_rep2 (E15R2).CNhs13006.10130-102G4", 
+        "cerebellum, embryo E15, biol_rep3 (E15R3).CNhs13018.10142-102H7", 
+        "cerebellum, embryo E16, biol_rep1 (E16R1).CNhs13000.10119-102F2", 
+        "cerebellum, embryo E16, biol_rep2 (E16R2).CNhs13007.10131-102G5", 
+        "cerebellum, embryo E16, biol_rep3 (E16R3).CNhs13019.10143-102H8", 
+        "cerebellum, embryo E17, biol_rep1 (E17R1).CNhs12818.10120-102F3", 
+        "cerebellum, embryo E17, biol_rep2 (E17R2).CNhs13008.10132-102G6", 
+        "cerebellum, embryo E17, biol_rep3 (E17R3).CNhs13020.10144-102H9", 
+        "cerebellum, embryo E18, biol_rep1 (E18R1).CNhs12962.10121-102F4", 
+        "cerebellum, embryo E18, biol_rep2 (E18R2).CNhs13009.10133-102G7", 
+        "cerebellum, embryo E18, biol_rep3 (E18R3).CNhs13021.10145-102I1", 
+        "cerebellum, neonate N00, biol_rep1 (P0R1).CNhs12963.10122-102F5", 
+        "cerebellum, neonate N00, biol_rep2 (P0R2).CNhs13010.10134-102G8", 
+        "cerebellum, neonate N00, biol_rep3 (P0R3).CNhs13022.10146-102I2", 
+        "cerebellum, neonate N03, biol_rep1 (P3R1).CNhs13001.10123-102F6", 
+        "cerebellum, neonate N03, biol_rep2 (P3R2).CNhs13011.10135-102G9", 
+        "cerebellum, neonate N03, biol_rep3 (P3R3).CNhs13024.10147-102I3", 
+        "cerebellum, neonate N06, biol_rep1 (P6R1).CNhs12819.10124-102F7", 
+        "cerebellum, neonate N06, biol_rep2 (P6R2).CNhs13012.10136-102H1", 
+        "cerebellum, neonate N06, biol_rep3 (P6R3).CNhs13025.10148-102I4", 
+        "cerebellum, neonate N09, biol_rep1 (P9R1).CNhs12820.10125-102F8", 
+        "cerebellum, neonate N09, biol_rep2 (P9R2).CNhs13013.10137-102H2", 
+        "cerebellum, neonate N09, biol_rep3 (P9R3).CNhs13026.10149-102I5"
+    ], 
+    "colon": [
+        "colon, adult.CNhs10468.36-18H7"
+    ], 
+    "common myeloid progenitor CMP": [
+        "common myeloid progenitor CMP, biol_rep1.CNhs12550.12122-128C7", 
+        "common myeloid progenitor CMP, biol_rep2.CNhs12203.12125-128D1", 
+        "common myeloid progenitor CMP, biol_rep3.CNhs12551.12128-128D4"
+    ], 
+    "corpora quadrigemina": [
+        "corpora quadrigemina, adult.CNhs10501.16-22A4"
+    ], 
+    "corpus striatum": [
+        "corpus striatum, adult.CNhs10487.19-21D8", 
+        "corpus striatum, neonate N00.CNhs11226.630-43F1"
+    ], 
+    "cortex": [
+        "cortex, adult.CNhs10473.12-14D5", 
+        "cortex, neonate N30.CNhs11107.1392-42F2"
+    ], 
+    "diencephalon": [
+        "diencephalon, adult.CNhs10482.20-12F2", 
+        "diencephalon, neonate N30.CNhs11201.1388-42B2"
+    ], 
+    "embryonic stem cell": [
+        "ES-46C embryonic stem cells, neuronal differentiation, day00, biol_rep1.CNhs14104.14357-155I1", 
+        "ES-46C embryonic stem cells, neuronal differentiation, day00, biol_rep2.CNhs14109.14362-155I6", 
+        "ES-OS25 embryonic stem cells, DMSO control, biol_rep1.CNhs14085.14339-155G1", 
+        "ES-OS25 embryonic stem cells, DMSO control, biol_rep2.CNhs14086.14340-155G2", 
+        "ES-OS25 embryonic stem cells, DMSO control, biol_rep3.CNhs14087.14341-155G3", 
+        "ES-OS25 embryonic stem cells, untreated control, biol_rep1.CNhs14091.14345-155G7", 
+        "ES-OS25 embryonic stem cells, untreated control, biol_rep2.CNhs14092.14346-155G8", 
+        "ES-OS25 embryonic stem cells, untreated control, biol_rep3.CNhs14093.14347-155G9", 
+        "ES-OS25 embryonic stem cells, untreated siRNA control, biol_rep1.CNhs14114.14367-156A2", 
+        "ES-OS25 embryonic stem cells, untreated siRNA control, biol_rep2.CNhs14115.14368-156A3"
+    ], 
+    "enterocyte": [
+        "CD326+ enterocyte isolated from mice, treated with RANKL, day03, pool1.CNhs13242.11850-124I5", 
+        "CD326+ enterocyte isolated from mice, treated with RANKL, day03, pool2.CNhs13233.11851-124I6", 
+        "CD326+ enterocyte, pool1.CNhs13542.11848-124I3", 
+        "CD326+ enterocyte, pool2.CNhs13197.11849-124I4", 
+        "CD326++ enterocyte isolated from mice, treated with RANKL, day03, pool1.CNhs13236.11852-124I7", 
+        "CD326++ enterocyte isolated from mice, treated with RANKL, day03, pool2.CNhs13210.11853-124I8"
+    ], 
+    "epididymis": [
+        "epididymis and seminiferous tubule, neonate N00.CNhs11218.1310-23B1", 
+        "epididymis and seminiferous tubule, neonate N30.CNhs11199.1387-42A2", 
+        "epididymis, adult.CNhs10490.58-23B2"
+    ], 
+    "eyeball": [
+        "eyeball, adult.CNhs10484.31-12G4", 
+        "eyeball, embryo E12.CNhs11016.345-16C6", 
+        "eyeball, embryo E14.CNhs10521.399-16E2", 
+        "eyeball, embryo E15.CNhs10593.426-16C9", 
+        "eyeball, embryo E17.CNhs11023.1261-18D4", 
+        "eyeball, neonate N00.CNhs11207.633-15C6", 
+        "eyeball, neonate N01.CNhs11140.1532-43E7", 
+        "eyeball, neonate N02.CNhs11205.1551-44G8", 
+        "eyeball, neonate N16.CNhs11188.777-19A2"
+    ], 
+    "fibroblast": [
+        "mouse fibroblast cell line: CRL-1658 NIH/3T3.CNhs11093.1830-49C7"
+    ], 
+    "forelimb": [
+        "forelimb, embryo E11.CNhs10596.335-25E2", 
+        "forelimb, embryo E12.CNhs10600.359-14H2", 
+        "forelimb, embryo E13.CNhs10589.384-1E2", 
+        "forelimb, embryo E14.CNhs10577.413-26A8", 
+        "forelimb, embryo E15.CNhs11007.437-20E7", 
+        "forelimb, embryo E17.CNhs10598.1517-43C4", 
+        "forelimb, embryo E18.CNhs11008.1520-43B5"
+    ], 
+    "gonad, embryo E13": [
+        "gonad, embryo E13.CNhs11044.1564-45I6"
+    ], 
+    "granulocyte macrophage progenitor GMP": [
+        "granulocyte macrophage progenitor GMP, biol_rep1.CNhs12206.12123-128C8", 
+        "granulocyte macrophage progenitor GMP, biol_rep2.CNhs12202.12126-128D2", 
+        "granulocyte macrophage progenitor GMP, biol_rep3.CNhs11928.12129-128D5"
+    ], 
+    "heart": [
+        "heart, embryo E11.CNhs10586.331-24E9", 
+        "heart, embryo E12.CNhs11015.353-12F5", 
+        "heart, embryo E13.CNhs11013.376-3I9", 
+        "heart, embryo E14.CNhs10597.403-26D4", 
+        "heart, embryo E15.CNhs11017.431-16C8", 
+        "heart, embryo E16.CNhs11021.457-17C6", 
+        "heart, embryo E17.CNhs11025.479-18E5", 
+        "heart, embryo E18.CNhs11030.1283-20G3", 
+        "heart, neonate N00.CNhs11213.639-21E3", 
+        "heart, neonate N03.CNhs11221.1349-25I2", 
+        "heart, neonate N10.CNhs11118.749-24G1", 
+        "heart, neonate N16.CNhs11209.782-15G1", 
+        "heart, neonate N20.CNhs11127.821-26I6", 
+        "heart, neonate N25.CNhs11196.1351-25D3", 
+        "heart, neonate N30.CNhs11202.1390-42D2"
+    ], 
+    "hematopoietic stem cell, fetal liver derived": [
+        "hematopoietic stem cell, bone marrow derived, adult 2years.CNhs14157.11958-126C5", 
+        "hematopoietic stem cell, bone marrow derived, embryo E19.5.CNhs14375.11956-126C3", 
+        "hematopoietic stem cell, bone marrow derived, newborn 2-3months.CNhs14156.11957-126C4", 
+        "hematopoietic stem cell, fetal liver derived, embryo E12.5.CNhs14153.11953-126B9", 
+        "hematopoietic stem cell, fetal liver derived, embryo E14.5.CNhs14154.11954-126C1", 
+        "hematopoietic stem cell, fetal liver derived, embryo E19.5.CNhs14155.11955-126C2"
+    ], 
+    "hematopoietic stem cell, placenta derived": [
+        "hematopoietic stem cell, placenta derived, embryo E10.5.CNhs14150.11950-126B6", 
+        "hematopoietic stem cell, placenta derived, embryo E11.5.CNhs14152.11952-126B8"
+    ], 
+    "hematopoietic stem cell,aorta-gonad-mesonephros (AGM) region derived": [
+        "Pre-hematopoietic stem cell, aorta-gonad-mesonephros (AGM) region derived, embryo E9.5.CNhs14149.11948-126B4", 
+        "hematopoietic stem cell, aorta-gonad-mesonephros (AGM) region derived, embryo E10.5.CNhs14374.11949-126B5", 
+        "hematopoietic stem cell,aorta-gonad-mesonephros (AGM) region derived, embryo E11.5.CNhs14151.11951-126B7"
+    ], 
+    "hepatic stellate cell": [
+        "Mouse hepatic Stellate Cells (lipocyte), donor1.CNhs13196.11825-124F7", 
+        "hepatic stellate cells, partial hepatectomy, 01week, biol_rep1.CNhs14517.13622-146H4", 
+        "hepatic stellate cells, partial hepatectomy, 02hr, biol_rep1.CNhs14393.13613-146G4", 
+        "hepatic stellate cells, partial hepatectomy, 30hr, biol_rep1.CNhs14511.13616-146G7", 
+        "hepatic stellate cells, partial hepatectomy, 30hr, biol_rep2.CNhs14512.13617-146G8", 
+        "hepatic stellate cells, partial hepatectomy, 30hr, biol_rep3.CNhs14513.13618-146G9", 
+        "hepatic stellate cells, partial hepatectomy, 48hr, biol_rep1.CNhs14514.13619-146H1", 
+        "hepatic stellate cells, partial hepatectomy, 48hr, biol_rep2.CNhs14515.13620-146H2", 
+        "hepatic stellate cells, partial hepatectomy, 48hr, biol_rep3.CNhs14516.13621-146H3", 
+        "hepatic stellate cells, sham operation, biol_rep1.CNhs14390.13610-146G1", 
+        "hepatic stellate cells, sham operation, biol_rep2.CNhs14391.13611-146G2", 
+        "hepatic stellate cells, sham operation, biol_rep3.CNhs14392.13612-146G3"
+    ], 
+    "hepatocyte": [
+        "Mouse hepatocyte, donor1.CNhs13078.11714-123C4", 
+        "Mouse hepatocyte, donor3.CNhs12615.11637-122C8", 
+        "Mouse hepatocyte, donor6.CNhs13090.11822-124F4", 
+        "Mouse hepatocyte, donor8.CNhs13091.11824-124F6", 
+        "Mouse hepatocyte, donor5.CNhs14553.11821-124F3", 
+        "Mouse hepatocyte, donor7.CNhs14554.11823-124F5", 
+        "hepatocytes, partial hepatectomy, 02hr, biol_rep1.CNhs14450.13583-146D1", 
+        "hepatocytes, partial hepatectomy, 02hr, biol_rep2.CNhs14451.13584-146D2", 
+        "hepatocytes, partial hepatectomy, 02hr, biol_rep3.CNhs14452.13585-146D3", 
+        "hepatocytes, partial hepatectomy, 30hr, biol_rep1.CNhs14453.13586-146D4", 
+        "hepatocytes, partial hepatectomy, 30hr, biol_rep2.CNhs14454.13587-146D5", 
+        "hepatocytes, partial hepatectomy, 30hr, biol_rep3.CNhs14455.13588-146D6", 
+        "hepatocytes, partial hepatectomy, 48hr, biol_rep1.CNhs14456.13589-146D7", 
+        "hepatocytes, partial hepatectomy, 48hr, biol_rep2.CNhs14458.13590-146D8", 
+        "hepatocytes, partial hepatectomy, 48hr, biol_rep3.CNhs14459.13591-146D9", 
+        "hepatocytes, partial hepatectomy, week01, biol_rep1.CNhs14460.13592-146E1", 
+        "hepatocytes, partial hepatectomy, week01, biol_rep2.CNhs14461.13593-146E2", 
+        "hepatocytes, partial hepatectomy, week01, biol_rep3.CNhs14462.13594-146E3", 
+        "hepatocytes, sham operation, biol_rep1.CNhs14447.13580-146C7", 
+        "hepatocytes, sham operation, biol_rep2.CNhs14448.13581-146C8", 
+        "hepatocytes, sham operation, biol_rep3.CNhs14449.13582-146C9"
+    ], 
+    "hippocampus": [
+        "hippocampus, adult.CNhs10478.13-16E8", 
+        "hippocampus, neonate N00.CNhs11228.627-43G1"
+    ], 
+    "intestinal mucosa": [
+        "intestinal mucosa, adult.CNhs10506.860-29I3"
+    ], 
+    "intestine": [
+        "intestine, adult.CNhs10496.178-9A3", 
+        "intestine, embryo E12.CNhs11019.1251-16I5", 
+        "intestine, embryo E13.CNhs11010.381-16D5", 
+        "intestine, embryo E15.CNhs10602.976-16D8", 
+        "intestine, embryo E16.CNhs10585.463-22H4", 
+        "intestine, embryo E17.CNhs10582.482-18D3", 
+        "intestine, embryo E18.CNhs10526.1289-20F7", 
+        "intestine, neonate N00.CNhs11126.644-26D1", 
+        "intestine, neonate N01.CNhs11192.1322-23E9", 
+        "intestine, neonate N06.CNhs11102.688-20B8", 
+        "intestine, neonate N07.CNhs11095.720-20F2", 
+        "intestine, neonate N10.CNhs11098.755-23A5", 
+        "intestine, neonate N20.CNhs11187.827-18D1", 
+        "intestine, neonate N25.CNhs11121.1352-25E3", 
+        "intestine, neonate N30.CNhs11131.1384-42G1"
+    ], 
+    "kidney": [
+        "kidney, embryo E14.CNhs10606.411-4I9", 
+        "kidney, embryo E15.CNhs10997.434-16F8", 
+        "kidney, embryo E16.CNhs10584.464-22A5", 
+        "kidney, embryo E17.CNhs11028.483-18I2", 
+        "kidney, embryo E18.CNhs11001.1288-20C7", 
+        "kidney, neonate N00.CNhs11214.646-21G7", 
+        "kidney, neonate N10.CNhs11206.758-6D5", 
+        "kidney, neonate N20.CNhs11113.832-19I1", 
+        "kidney, neonate N25.CNhs11122.1353-25F3", 
+        "kidney, neonate N30.CNhs11203.1385-42H1"
+    ], 
+    "liver": [
+        "liver, adult pregnant day01.CNhs10466.508-5B2", 
+        "liver, embryo E12.CNhs10601.355-15F8", 
+        "liver, embryo E13.CNhs10524.378-3H6", 
+        "liver, embryo E14.CNhs10594.409-16E1", 
+        "liver, embryo E15.CNhs10520.433-16D7", 
+        "liver, embryo E16.CNhs10523.462-17F5", 
+        "liver, embryo E17.CNhs10510.481-18A3", 
+        "liver, embryo E18.CNhs10579.499-43G4", 
+        "liver, neonate N00.CNhs11117.641-24F4", 
+        "liver, neonate N03.CNhs11123.1345-25G2", 
+        "liver, neonate N06.CNhs11101.684-20A8", 
+        "liver, neonate N07.CNhs11103.716-20H2", 
+        "liver, neonate N10.CNhs11115.751-24B9", 
+        "liver, neonate N20.CNhs11220.823-25A3", 
+        "liver, neonate N25.CNhs11198.1368-26H1", 
+        "liver, neonate N30.CNhs11106.1382-42D1"
+    ], 
+    "liver sinusoidal endothelial cell": [
+        "Mouse hepatic Sinusoidal Endothelial Cells, donor1.CNhs13209.11830-124G3", 
+        "liver sinusoidal endothelial cells, partial hepatectomy, 01week, biol_rep1.CNhs14508.13607-146F7", 
+        "liver sinusoidal endothelial cells, partial hepatectomy, 01week, biol_rep2.CNhs14509.13608-146F8", 
+        "liver sinusoidal endothelial cells, partial hepatectomy, 01week, biol_rep3.CNhs14510.13609-146F9", 
+        "liver sinusoidal endothelial cells, partial hepatectomy, 02hr, biol_rep1.CNhs14504.13598-146E7", 
+        "liver sinusoidal endothelial cells, partial hepatectomy, 02hr, biol_rep2.CNhs14399.13599-146E8", 
+        "liver sinusoidal endothelial cells, partial hepatectomy, 02hr, biol_rep3.CNhs14400.13600-146E9", 
+        "liver sinusoidal endothelial cells, partial hepatectomy, 30hr, biol_rep1.CNhs14402.13601-146F1", 
+        "liver sinusoidal endothelial cells, partial hepatectomy, 30hr, biol_rep2.CNhs14403.13602-146F2", 
+        "liver sinusoidal endothelial cells, partial hepatectomy, 30hr, biol_rep3.CNhs14506.13603-146F3", 
+        "liver sinusoidal endothelial cells, partial hepatectomy, 48hr, biol_rep1.CNhs14404.13604-146F4", 
+        "liver sinusoidal endothelial cells, partial hepatectomy, 48hr, biol_rep2.CNhs14405.13605-146F5", 
+        "liver sinusoidal endothelial cells, partial hepatectomy, 48hr, biol_rep3.CNhs14507.13606-146F6", 
+        "liver sinusoidal endothelial cells, sham operation, biol_rep1.CNhs14503.13595-146E4", 
+        "liver sinusoidal endothelial cells, sham operation, biol_rep2.CNhs14502.13596-146E5", 
+        "liver sinusoidal endothelial cells, sham operation, biol_rep3.CNhs14398.13597-146E6"
+    ], 
+    "lung": [
+        "lung, adult.CNhs10474.28-22B1", 
+        "lung, embryo E12.CNhs10522.354-16G2", 
+        "lung, embryo E14.CNhs10604.404-26F8", 
+        "lung, embryo E15.CNhs11020.432-17C5", 
+        "lung, embryo E16.CNhs10998.458-17B6", 
+        "lung, embryo E17.CNhs10605.480-44A6", 
+        "lung, embryo E18.CNhs10583.1287-20I6", 
+        "lung, neonate N00.CNhs11224.640-42C6", 
+        "lung, neonate N06.CNhs11212.683-20E5", 
+        "lung, neonate N07.CNhs11111.715-19A3", 
+        "lung, neonate N10.CNhs11219.750-23E6", 
+        "lung, neonate N20.CNhs11109.822-18A4", 
+        "lung, neonate N25.CNhs11119.1359-25C7", 
+        "lung, neonate N30.CNhs11133.1394-42H2"
+    ], 
+    "macrophage": [
+        "macrophage, bone marrow derived, pool1.CNhs11457.3560-170A1", 
+        "macrophage, bone marrow derived, pool2.CNhs11532.3632-171A1", 
+        "macrophage, TB infection, non-stimulated BMDM, with Mtb, 120hr(096h after stimulation), biol_rep2.CNhs11586.3683-171G6", 
+        "macrophage, TB infection, non stimulated BMDM, with Mtb, 120hr(096h after stimulation), biol_rep4.CNhs14351.3976-173D5", 
+        "macrophage, TB infection, non-stimulated BMDM, without Mtb, 120hr, biol_rep1.CNhs11463.3566-170G1", 
+        "macrophage, TB infection, non-stimulated BMDM, without Mtb, 072hr, biol_rep1.CNhs11462.3565-170F1", 
+        "macrophage, TB infection, non-stimulated BMDM, with Mtb, 072hr(048h after stimulation), biol_rep1.CNhs11510.3610-170F6", 
+        "macrophage, TB infection, non-stimulated BMDM, with Mtb, 028hr(004h after stimulation), biol_rep2.CNhs11582.3679-171C6", 
+        "macrophage, TB infection, non-stimulated BMDM, with Mtb, 036hr(012h after stimulation), biol_rep2.CNhs11583.3680-171D6", 
+        "macrophage, TB infection, non-stimulated BMDM, without Mtb, 024hr, biol_rep1.CNhs11458.3561-170B1", 
+        "macrophage, TB infection, non-stimulated BMDM, with Mtb, 048hr(024h after stimulation), biol_rep2.CNhs11584.3681-171E6", 
+        "macrophage, TB infection, non-stimulated BMDM, without Mtb, 048hr, biol_rep1.CNhs11461.3564-170E1", 
+        "macrophage, TB infection, non-stimulated BMDM, without Mtb, 024hr, biol_rep2.CNhs11533.3633-171B1", 
+        "macrophage, TB infection, non-stimulated BMDM, without Mtb, 028hr, biol_rep1.CNhs11459.3562-170C1", 
+        "macrophage, TB infection, non-stimulated BMDM, with Mtb, 120hr(096h after stimulation), biol_rep1.CNhs11511.3611-170G6", 
+        "macrophage, TB infection, non-stimulated BMDM, without Mtb, 028hr, biol_rep2.CNhs11534.3634-171C1", 
+        "macrophage, TB infection, non-stimulated BMDM, without Mtb, 036hr, biol_rep2.CNhs11535.3635-171D1", 
+        "macrophage, TB infection, non-stimulated BMDM, without Mtb, 036hr, biol_rep1.CNhs11460.3563-170D1", 
+        "macrophage, TB infection, non-stimulated BMDM, without Mtb, 072hr, biol_rep2.CNhs11537.3637-171F1", 
+        "macrophage, TB infection, non-stimulated BMDM, without Mtb, 048hr, biol_rep2.CNhs11536.3636-171E1", 
+        "macrophage, TB infection, non-stimulated BMDM, with Mtb, 036hr(012h after stimulation), biol_rep1.CNhs11508.3608-170D6", 
+        "macrophage, TB infection, non-stimulated BMDM, without Mtb, 120hr, biol_rep2.CNhs11538.3638-171G1", 
+        "macrophage, TB infection, non-stimulated BMDM, with Mtb, 048hr(024h after stimulation), biol_rep1.CNhs11509.3609-170E6", 
+        "macrophage, TB infection, non-stimulated BMDM, with Mtb, 028hr(004h after stimulation), biol_rep1.CNhs11507.3607-170C6", 
+        "macrophage, TB infection, non stimulated BMDM, without Mtb, 024hr, biol_rep4.CNhs14342.3967-173D4", 
+        "macrophage, TB infection, non-stimulated BMDM, without Mtb, 120hr, biol_rep3.CNhs14301.3713-172A2", 
+        "macrophage, TB infection, non-stimulated BMDM, without Mtb, 048hr, biol_rep3.CNhs14299.3711-172H1", 
+        "macrophage, TB infection, non stimulated BMDM, with Mtb, 036hr(012h after stimulation), biol_rep4.CNhs14348.3973-173A5", 
+        "macrophage, TB infection, non-stimulated BMDM, without Mtb, 072hr, biol_rep3.CNhs14300.3712-172I1", 
+        "macrophage, TB infection, non-stimulated BMDM, without Mtb, 006hr, biol_rep3.CNhs11634.3706-172C1", 
+        "macrophage, TB infection, non-stimulated BMDM, without Mtb, 004hr, biol_rep3.CNhs11633.3705-172B1", 
+        "macrophage, bone marrow derived, pool3.CNhs11632.3704-172A1", 
+        "macrophage, TB infection, non stimulated BMDM, with Mtb, 048hr(024h after stimulation), biol_rep4.CNhs14349.3974-173B5", 
+        "macrophage, TB infection, non-stimulated BMDM, without Mtb, 036hr, biol_rep3.CNhs14298.3710-172G1", 
+        "macrophage, TB infection, non stimulated BMDM, with Mtb, 072hr(048h after stimulation), biol_rep4.CNhs14350.3975-173C5", 
+        "macrophage, TB infection, non-stimulated BMDM, without Mtb, 012hr, biol_rep3.CNhs11635.3707-172D1", 
+        "macrophage, TB infection, non-stimulated BMDM, without Mtb, 028hr, biol_rep3.CNhs11637.3709-172F1", 
+        "macrophage, TB infection, non-stimulated BMDM, without Mtb, 024hr, biol_rep3.CNhs11636.3708-172E1", 
+        "macrophage, TB infection, non stimulated BMDM, with Mtb, 028hr(004h after stimulation), biol_rep4.CNhs14347.3972-173I4", 
+        "macrophage, bone marrow derived.CNhs14136.2171-50H8"
+    ], 
+    "macrophage - alternatively activated": [
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 120hr, biol_rep2.CNhs11581.3678-171B6", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 028hr, biol_rep2.CNhs11577.3674-171G5", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 006hr, biol_rep2.CNhs11574.3671-171D5", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 024hr, biol_rep2.CNhs11556.3653-171D3", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 012hr, biol_rep2.CNhs11555.3652-171C3", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 006hr, biol_rep1.CNhs11476.3579-170B3", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 036hr, biol_rep2.CNhs11558.3655-171F3", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 072hr, biol_rep2.CNhs11580.3677-171A6", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 024hr, biol_rep1.CNhs11478.3581-170D3", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 048hr, biol_rep1.CNhs11491.3594-170H4", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 012hr, biol_rep2.CNhs11575.3672-171E5", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 006hr, biol_rep2.CNhs11564.3661-171C4", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 024hr, biol_rep2.CNhs11576.3673-171F5", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 120hr, biol_rep2.CNhs11571.3668-171A5", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 048hr, biol_rep2.CNhs11579.3676-171I5", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 028hr, biol_rep2.CNhs11557.3654-171E3", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 006hr, biol_rep2.CNhs11554.3651-171B3", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 002hr, biol_rep2.CNhs11552.3649-171I2", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 072hr, biol_rep2.CNhs11570.3667-171I4", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 004hr, biol_rep2.CNhs11563.3660-171B4", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 004hr, biol_rep2.CNhs11553.3650-171A3", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 120hr, biol_rep2.CNhs11561.3658-171I3", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 012hr, biol_rep2.CNhs11565.3662-171D4", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 072hr, biol_rep1.CNhs11492.3595-170I4", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 120hr, biol_rep1.CNhs11493.3596-170A5", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 004hr, biol_rep1.CNhs11485.3588-170B4", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 004hr, biol_rep1.CNhs11475.3578-170A3", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 002hr, biol_rep2.CNhs11562.3659-171A4", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 036hr, biol_rep2.CNhs11568.3665-171G4", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 002hr, biol_rep1.CNhs11494.3597-170B5", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 002hr, biol_rep1.CNhs11484.3587-170A4", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 028hr, biol_rep2.CNhs11567.3664-171F4", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 048hr, biol_rep2.CNhs11559.3656-171G3", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 120hr, biol_rep1.CNhs11483.3586-170I3", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 024hr, biol_rep1.CNhs11488.3591-170E4", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), with Mtb, 120hr(096h after stimulation), biol_rep1.CNhs11521.3621-170H7", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 024hr, biol_rep2.CNhs11566.3663-171E4", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 028hr, biol_rep1.CNhs11489.3592-170F4", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 036hr, biol_rep1.CNhs11490.3593-170G4", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 002hr, biol_rep1.CNhs11474.3577-170I2", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), with Mtb, 048hr(024h after stimulation), biol_rep1.CNhs11519.3619-170F7", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), with Mtb, 048hr(024h after stimulation), biol_rep1.CNhs11524.3624-170B8", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 048hr, biol_rep2.CNhs11569.3666-171H4", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 024hr, biol_rep1.CNhs11498.3601-170F5", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 036hr, biol_rep1.CNhs11480.3583-170F3", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 004hr, biol_rep1.CNhs11495.3598-170C5", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), with Mtb, 072hr(048h after stimulation), biol_rep1.CNhs11520.3620-170G7", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 072hr, biol_rep1.CNhs11482.3585-170H3", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 006hr, biol_rep1.CNhs11496.3599-170D5", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 048hr, biol_rep1.CNhs11481.3584-170G3", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 006hr, biol_rep1.CNhs11486.3589-170C4", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 028hr, biol_rep1.CNhs11479.3582-170E3", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), with Mtb, 120hr(096h after stimulation), biol_rep1.CNhs11526.3626-170D8", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 012hr, biol_rep1.CNhs11487.3590-170D4", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), with Mtb, 072hr(048h after stimulation), biol_rep1.CNhs11525.3625-170C8", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 012hr, biol_rep1.CNhs11497.3600-170E5", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), with Mtb, 120hr(096h after stimulation), biol_rep1.CNhs11531.3631-170I8", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), with Mtb, 028hr(004h after stimulation), biol_rep1.CNhs11517.3617-170D7", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), with Mtb, 028hr(004h after stimulation), biol_rep1.CNhs11527.3627-170E8", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), with Mtb, 028hr(004h after stimulation), biol_rep1.CNhs11522.3622-170I7", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 028hr, biol_rep1.CNhs11502.3602-170G5", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), with Mtb, 036hr(012h after stimulation), biol_rep1.CNhs11518.3618-170E7", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 120hr, biol_rep3.CNhs14267.3753-172E6", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), with Mtb, 072hr(048h after stimulation), biol_rep1.CNhs11530.3630-170H8", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), with Mtb, 048hr(024h after stimulation), biol_rep1.CNhs11529.3629-170G8", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), with Mtb, 036hr(012h after stimulation), biol_rep1.CNhs11528.3628-170F8", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 048hr, biol_rep1.CNhs11504.3604-170I5", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), with Mtb, 036hr(012h after stimulation), biol_rep1.CNhs11523.3623-170A8", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 036hr, biol_rep1.CNhs11503.3603-170H5", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 120hr, biol_rep1.CNhs11506.3606-170B6", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 072hr, biol_rep3.CNhs14257.3742-172C5", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 072hr, biol_rep1.CNhs11505.3605-170A6", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 120hr, biol_rep3.CNhs14258.3743-172D5", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 048hr, biol_rep3.CNhs14265.3751-172C6", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 048hr, biol_rep3.CNhs14256.3741-172B5", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), with Mtb, 036hr(012h after stimulation), biol_rep2.CNhs11618.3690-171E7", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 072hr, biol_rep3.CNhs14266.3752-172D6", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 004hr, biol_rep3.CNhs14259.3745-172F5", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 028hr, biol_rep3.CNhs14254.3739-172I4", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), with Mtb, 048hr(024h after stimulation), biol_rep2.CNhs11619.3691-171F7", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 036hr, biol_rep3.CNhs14255.3740-172A5", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), with Mtb, 028hr(004h after stimulation), biol_rep2.CNhs11627.3699-171E8", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), with Mtb, 072hr(048h after stimulation), biol_rep2.CNhs11625.3697-171C8", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 036hr, biol_rep3.CNhs14264.3750-172B6", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), with Mtb, 120hr(096h after stimulation), biol_rep2.CNhs11621.3693-171H7", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), with Mtb, 072hr(048h after stimulation), biol_rep2.CNhs11620.3692-171G7", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), with Mtb, 048hr(024h after stimulation), biol_rep2.CNhs11629.3701-171G8", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 024hr, biol_rep3.CNhs14262.3748-172I5", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), with Mtb, 036hr(012h after stimulation), biol_rep2.CNhs11628.3700-171F8", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), with Mtb, 120hr(096h after stimulation), biol_rep2.CNhs11626.3698-171D8", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 028hr, biol_rep3.CNhs14263.3749-172A6", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), with Mtb, 120hr(096h after stimulation), biol_rep2.CNhs11631.3703-171I8", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), with Mtb, 120hr(096h after stimulation), biol_rep4.CNhs14361.3986-173E6", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), with Mtb, 036hr(012h after stimulation), biol_rep2.CNhs11623.3695-171A8", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 012hr, biol_rep3.CNhs14261.3747-172H5", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), with Mtb, 072hr(048h after stimulation), biol_rep4.CNhs14360.3985-173D6", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 120hr, biol_rep3.CNhs14309.3733-172C4", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 024hr, biol_rep3.CNhs11648.3728-172G3", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), with Mtb, 048hr(024h after stimulation), biol_rep2.CNhs11624.3696-171B8", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), with Mtb, 072hr(048h after stimulation), biol_rep2.CNhs11630.3702-171H8", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 072hr, biol_rep3.CNhs14308.3732-172B4", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), with Mtb, 028hr(004h after stimulation), biol_rep2.CNhs11617.3689-171D7", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), with Mtb, 028hr(004h after stimulation), biol_rep4.CNhs14362.3987-173F6", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), with Mtb, 028hr(004h after stimulation), biol_rep2.CNhs11622.3694-171I7", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), with Mtb, 028hr(004h after stimulation), biol_rep4.CNhs14357.3982-173A6", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 002hr, biol_rep3.CNhs11650.3734-172D4", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 006hr, biol_rep3.CNhs14260.3746-172G5", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 024hr, biol_rep4.CNhs14346.3971-173H4", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 048hr, biol_rep3.CNhs14307.3731-172A4", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 012hr, biol_rep3.CNhs11647.3727-172F3", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 028hr, biol_rep3.CNhs11649.3729-172H3", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), without Mtb, 002hr, biol_rep3.CNhs11655.3744-172E5", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 024hr, biol_rep4.CNhs14345.3970-173G4", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 024hr, biol_rep3.CNhs11654.3738-172H4", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 002hr, biol_rep3.CNhs11644.3724-172C3", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 006hr, biol_rep3.CNhs11652.3736-172F4", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 012hr, biol_rep3.CNhs11653.3737-172G4", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), without Mtb, 004hr, biol_rep3.CNhs11651.3735-172E4", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 006hr, biol_rep3.CNhs11646.3726-172E3", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 004hr, biol_rep3.CNhs11645.3725-172D3", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), with Mtb, 072hr(048h after stimulation), biol_rep4.CNhs14370.3995-173E7", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), with Mtb, 072hr(048h after stimulation), biol_rep4.CNhs14365.3990-173I6", 
+        "macrophage, TB infection, stimulated BMDM+IL-13(aaMph), without Mtb, 036hr, biol_rep3.CNhs14306.3730-172I3", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), with Mtb, 036hr(012h after stimulation), biol_rep4.CNhs14368.3993-173C7", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), with Mtb, 048hr(024h after stimulation), biol_rep4.CNhs14369.3994-173D7", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), with Mtb, 120hr(096h after stimulation), biol_rep4.CNhs14371.3996-173F7", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), with Mtb, 048hr(024h after stimulation), biol_rep4.CNhs14364.3989-173H6", 
+        "macrophage, TB infection, stimulated BMDM+IL-4(aaMph), with Mtb, 028hr(004h after stimulation), biol_rep4.CNhs14367.3992-173B7", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), with Mtb, 120hr(096h after stimulation), biol_rep4.CNhs14366.3991-173A7", 
+        "macrophage, TB infection, stimulated BMDM+IL-4/IL-13(aaMph), with Mtb, 036hr(012h after stimulation), biol_rep4.CNhs14363.3988-173G6"
+    ], 
+    "macrophage - classically activated": [
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 028hr, biol_rep1.CNhs11469.3572-170D2", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), with Mtb, 036hr(012h after stimulation), biol_rep2.CNhs11588.3685-171I6", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), with Mtb, 028hr(004h after stimulation), biol_rep2.CNhs11587.3684-171H6", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 048hr, biol_rep2.CNhs11549.3646-171F2", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 024hr, biol_rep1.CNhs11468.3571-170C2", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 004hr, biol_rep1.CNhs11465.3568-170I1", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 036hr, biol_rep1.CNhs11470.3573-170E2", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 012hr, biol_rep1.CNhs11467.3570-170B2", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 036hr, biol_rep2.CNhs11548.3645-171E2", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 002hr, biol_rep1.CNhs11464.3567-170H1", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 072hr, biol_rep2.CNhs11550.3647-171G2", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 120hr, biol_rep1.CNhs11473.3576-170H2", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 006hr, biol_rep1.CNhs11466.3569-170A2", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 048hr, biol_rep1.CNhs11471.3574-170F2", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 120hr, biol_rep2.CNhs11551.3648-171H2", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 028hr, biol_rep2.CNhs11547.3644-171D2", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), with Mtb, 120hr(096h after stimulation), biol_rep1.CNhs11516.3616-170C7", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), with Mtb, 048hr(024h after stimulation), biol_rep1.CNhs11514.3614-170A7", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 024hr, biol_rep2.CNhs11543.3643-171C2", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 006hr, biol_rep2.CNhs11541.3641-171A2", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), with Mtb, 072hr(048h after stimulation), biol_rep1.CNhs11515.3615-170B7", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 002hr, biol_rep2.CNhs11539.3639-171H1", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), with Mtb, 028hr(004h after stimulation), biol_rep1.CNhs11512.3612-170H6", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 004hr, biol_rep2.CNhs11540.3640-171I1", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 012hr, biol_rep2.CNhs11542.3642-171B2", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), with Mtb, 036hr(012h after stimulation), biol_rep1.CNhs11513.3613-170I6", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), with Mtb, 120hr(096h after stimulation), biol_rep4.CNhs14356.3981-173I5", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 072hr, biol_rep3.CNhs14304.3722-172A3", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 024hr, biol_rep4.CNhs14343.3968-173E4", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), with Mtb, 120hr(096h after stimulation), biol_rep2.CNhs11616.3688-171C7", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 120hr, biol_rep3.CNhs14305.3723-172B3", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), with Mtb, 072hr(048h after stimulation), biol_rep2.CNhs11615.3687-171B7", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), with Mtb, 048hr(024h after stimulation), biol_rep2.CNhs11614.3686-171A7", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), with Mtb, 028hr(004h after stimulation), biol_rep4.CNhs14352.3977-173E5", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), with Mtb, 072hr(048h after stimulation), biol_rep4.CNhs14355.3980-173H5", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 048hr, biol_rep3.CNhs14303.3721-172I2", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 006hr, biol_rep3.CNhs11640.3716-172D2", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 012hr, biol_rep3.CNhs11641.3717-172E2", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 036hr, biol_rep3.CNhs14302.3720-172H2", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), with Mtb, 048hr(024h after stimulation), biol_rep4.CNhs14354.3979-173G5", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 004hr, biol_rep3.CNhs11639.3715-172C2", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 028hr, biol_rep3.CNhs11643.3719-172G2", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 002hr, biol_rep3.CNhs11638.3714-172B2", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), without Mtb, 024hr, biol_rep3 .CNhs11642.3718-172F2", 
+        "macrophage, TB infection, stimulated BMDM+IFNg(caMph), with Mtb, 036hr(012h after stimulation), biol_rep4.CNhs14353.3978-173F5"
+    ], 
+    "mammary gland": [
+        "mammary gland, adult lactating day02.CNhs10480.595-22B6", 
+        "mammary gland, adult pregnant day19.CNhs10476.588-5H2"
+    ], 
+    "medulla oblongata": [
+        "medulla oblongata, adult.CNhs10477.17-12C2", 
+        "medulla oblongata, neonate N30.CNhs11200.1396-42A3"
+    ], 
+    "natural helper cell": [
+        "natural helper cells, IL2 treated, day15, biol_rep1, tech_rep1.CNhs12576.12247-129H6", 
+        "natural helper cells, IL2 treated, day15, biol_rep1, tech_rep2.CNhs14330.12247-129H6", 
+        "natural helper cells, IL2 treated, day15, biol_rep1, tech_rep3.CNhs14378.12247-129H6", 
+        "natural helper cells, IL2 treated, day15, biol_rep2, tech_rep1.CNhs12508.12248-129H7", 
+        "natural helper cells, IL2 treated, day15, biol_rep2, tech_rep2.CNhs14334.12248-129H7", 
+        "natural helper cells, IL2 treated, day15, biol_rep2, tech_rep3.CNhs14388.12248-129H7", 
+        "natural helper cells, IL2 treated, day15, biol_rep3, tech_rep1.CNhs12509.12249-129H8", 
+        "natural helper cells, IL2 treated, day15, biol_rep3, tech_rep2.CNhs14335.12249-129H8", 
+        "natural helper cells, IL2 treated, day15, biol_rep3, tech_rep3.CNhs14389.12249-129H8", 
+        "natural helper cells, IL33 treated, 01hr, biol_rep1, tech_rep1.CNhs12579.12253-129I3", 
+        "natural helper cells, IL33 treated, 01hr, biol_rep1, tech_rep2.CNhs14332.12253-129I3", 
+        "natural helper cells, IL33 treated, 01hr, biol_rep1, tech_rep3.CNhs14383.12253-129I3", 
+        "natural helper cells, IL33 treated, 01hr, biol_rep2, tech_rep2.CNhs14338.12254-129I4", 
+        "natural helper cells, IL33 treated, 01hr, biol_rep2, tech_rep3.CNhs14384.12254-129I4", 
+        "natural helper cells, IL33 treated, 01hr, biol_rep3, tech_rep2.CNhs14339.12255-129I5", 
+        "natural helper cells, IL33 treated, 01hr, biol_rep3, tech_rep3.CNhs14380.12255-129I5", 
+        "natural helper cells, IL33 treated, day02, biol_rep1, tech_rep2.CNhs14336.12250-129H9", 
+        "natural helper cells, IL33 treated, day02, biol_rep1, tech_rep3.CNhs14386.12250-129H9", 
+        "natural helper cells, IL33 treated, day02, biol_rep2, tech_rep2.CNhs14337.12251-129I1", 
+        "natural helper cells, IL33 treated, day02, biol_rep2, tech_rep3.CNhs14385.12251-129I1", 
+        "natural helper cells, IL33 treated, day02, biol_rep3, tech_rep1.CNhs12578.12252-129I2", 
+        "natural helper cells, IL33 treated, day02, biol_rep3, tech_rep2.CNhs14331.12252-129I2", 
+        "natural helper cells, IL33 treated, day02, biol_rep3, tech_rep3.CNhs14379.12252-129I2", 
+        "natural helper cells, naive, biol_rep1, tech_rep2.CNhs14340.12256-129I6", 
+        "natural helper cells, naive, biol_rep1, tech_rep3.CNhs14381.12256-129I6", 
+        "natural helper cells, naive, biol_rep2, tech_rep1.CNhs12515.12257-129I7", 
+        "natural helper cells, naive, biol_rep2, tech_rep2.CNhs14341.12257-129I7", 
+        "natural helper cells, naive, biol_rep2, tech_rep3.CNhs14382.12257-129I7", 
+        "natural helper cells, naive, biol_rep3, tech_rep1.CNhs12580.12258-129I8", 
+        "natural helper cells, naive, biol_rep3, tech_rep2.CNhs14333.12258-129I8", 
+        "natural helper cells, naive, biol_rep3, tech_rep3.CNhs14387.12258-129I8"
+    ], 
+    "neurosphere": [
+        "neurospheres - enteric neuron derived, biol_rep1.CNhs13087.11810-124E1", 
+        "neurospheres - enteric neuron derived, biol_rep2.CNhs13088.11811-124E2", 
+        "neurospheres - enteric neuron derived, biol_rep3.CNhs13089.11812-124E3", 
+        "neurospheres - parasympathetic neuron derived, biol_rep1.CNhs13084.11807-124D7", 
+        "neurospheres - parasympathetic neuron derived, biol_rep2.CNhs13085.11808-124D8", 
+        "neurospheres - parasympathetic neuron derived, biol_rep3.CNhs13086.11809-124D9", 
+        "neurospheres - sympathetic neuron derived, biol_rep1.CNhs13081.11804-124D4", 
+        "neurospheres - sympathetic neuron derived, biol_rep2.CNhs13082.11805-124D5", 
+        "neurospheres - sympathetic neuron derived, biol_rep3.CNhs13083.11806-124D6"
+    ], 
+    "olfactory brain": [
+        "olfactory brain, adult.CNhs10489.18-22I9"
+    ], 
+    "osteoclast": [
+        "osteoclast, bone marrow derived.CNhs14137.2379-69A1"
+    ], 
+    "osteocyte": [
+        "ST2 (Mesenchymal stem cells) cells, differentiation to osteocytes, day06, biol_rep1 (144hB1).CNhs11940.12337-130I6", 
+        "ST2 (Mesenchymal stem cells) cells, differentiation to osteocytes, day06, biol_rep2 (144hB2).CNhs13274.12459-132E2", 
+        "ST2 (Mesenchymal stem cells) cells, differentiation to osteocytes, day06, biol_rep3 (144hB3).CNhs13323.12581-133I7"
+    ], 
+    "ovary": [
+        "ovary, adult.CNhs10507.91-2I7", 
+        "ovary, embryo E18.CNhs11040.505-44H7", 
+        "ovary, neonate N00.CNhs11217.1299-22I4"
+    ], 
+    "oviduct": [
+        "oviduct, adult pregnant day01.CNhs10500.988-6G6"
+    ], 
+    "pancreas": [
+        "pancreas, adult.CNhs10486.34-16E4", 
+        "pancreas, embryo E14.CNhs11012.405-44F4", 
+        "pancreas, embryo E15.CNhs11042.1556-45F2", 
+        "pancreas, embryo E16.CNhs11003.460-26E5", 
+        "pancreas, embryo E17.CNhs10599.1558-45G3", 
+        "pancreas, embryo E18.CNhs10580.1535-43I7", 
+        "pancreas, neonate N00.CNhs11105.645-26G9", 
+        "pancreas, neonate N01.CNhs11138.1531-43D7", 
+        "pancreas, neonate N02.CNhs11139.1539-43D8", 
+        "pancreas, neonate N16.CNhs11136.787-43B6", 
+        "pancreas, neonate N25.CNhs11094.1555-45E2", 
+        "pancreas, neonate N30.CNhs11182.1548-44H5"
+    ], 
+    "pituitary gland": [
+        "pituitary gland, adult.CNhs10493.21-1G8", 
+        "pituitary gland, embryo E12.CNhs11018.346-16E6", 
+        "pituitary gland, embryo E13.CNhs11009.370-44C7", 
+        "pituitary gland, embryo E14.CNhs11037.398-44A5", 
+        "pituitary gland, embryo E15.CNhs10592.427-16B9", 
+        "pituitary gland, embryo E16.CNhs11036.449-43F6", 
+        "pituitary gland, embryo E17.CNhs11039.1265-44F5", 
+        "pituitary gland, neonate N00.CNhs11190.1308-22E9"
+    ], 
+    "placenta": [
+        "placenta, adult pregnant day10.CNhs10472.539-13I7", 
+        "placenta, adult pregnant day17.CNhs10464.577-18G3"
+    ], 
+    "prostate": [
+        "prostate, adult.CNhs10470.859-1F8"
+    ], 
+    "skeletal muscle": [
+        "muscle (biceps femoris), neonate N30.CNhs11129.1389-42C2"
+    ], 
+    "skin": [
+        "skin, adult.CNhs10492.30-1C3", 
+        "skin, neonate N00.CNhs11124.650-25G4", 
+        "skin, neonate N03.CNhs11215.662-22H3", 
+        "skin, neonate N06.CNhs11097.693-20I5", 
+        "skin, neonate N10.CNhs11108.762-6C4"
+    ], 
+    "small intestine": [
+        "small intestine, neonate N16.CNhs11114.790-21I1"
+    ], 
+    "spinal cord": [
+        "spinal cord, adult.CNhs10505.24-13C9"
+    ], 
+    "spleen": [
+        "spleen, adult.CNhs10465.25-2G2", 
+        "spleen, embryo E16.CNhs11035.461-43C1", 
+        "spleen, embryo E18.CNhs11011.1271-21F2", 
+        "spleen, neonate N10.CNhs11116.752-24D1", 
+        "spleen, neonate N20.CNhs11112.824-19H1", 
+        "spleen, neonate N25.CNhs11099.1354-25G3"
+    ], 
+    "stomach": [
+        "stomach, adult.CNhs10503.33-1H6", 
+        "stomach, embryo E12.CNhs10588.356-43E3", 
+        "stomach, embryo E15.CNhs10603.1252-16G8", 
+        "stomach, embryo E16.CNhs11022.459-17D4", 
+        "stomach, embryo E17.CNhs11006.1035-18D5", 
+        "stomach, embryo E18.CNhs10999.1286-20C6", 
+        "stomach, neonate N03.CNhs11193.1340-24B8", 
+        "stomach, neonate N07.CNhs11210.718-18A9", 
+        "stomach, neonate N25.CNhs11104.1355-25E4", 
+        "stomach, neonate N30.CNhs11134.1386-42I1"
+    ], 
+    "submandibular gland": [
+        "submandibular gland, adult.CNhs10469.59-29C1"
+    ], 
+    "testis": [
+        "testis, adult.CNhs10504.57-7G5", 
+        "testis, embryo E13.CNhs11031.389-23F5", 
+        "testis, embryo E15.CNhs11034.443-27C5", 
+        "testis, embryo E16.CNhs11033.470-26G5", 
+        "testis, embryo E17.CNhs11029.486-18I5", 
+        "testis, embryo E18.CNhs11027.503-18G5", 
+        "testis, neonate N00.CNhs11189.1300-22B7", 
+        "testis, neonate N07.CNhs11222.726-26I4", 
+        "testis, neonate N10.CNhs11204.763-44D9", 
+        "testis, neonate N20.CNhs11110.839-18H3", 
+        "testis, neonate N30.CNhs11130.1391-42E2"
+    ], 
+    "thymus": [
+        "thymus, adult.CNhs10471.38-12B5", 
+        "thymus, embryo E14.CNhs11041.402-44I4", 
+        "thymus, embryo E15.CNhs11005.430-45I2", 
+        "thymus, embryo E16.CNhs11002.456-26C5", 
+        "thymus, embryo E17.CNhs10581.478-18C1", 
+        "thymus, embryo E18.CNhs10595.1273-19G4", 
+        "thymus, neonate N02.CNhs11181.1541-43F8", 
+        "thymus, neonate N03.CNhs11137.2104-43C7", 
+        "thymus, neonate N06.CNhs11197.681-26C4", 
+        "thymus, neonate N07.CNhs11211.713-19D3", 
+        "thymus, neonate N10.CNhs11194.748-24E4", 
+        "thymus, neonate N20.CNhs11186.820-7A2", 
+        "thymus, neonate N25.CNhs11125.1362-25G7", 
+        "thymus, neonate N30.CNhs11132.1393-42G2"
+    ], 
+    "tongue": [
+        "tongue, adult.CNhs10499.32-1B4"
+    ], 
+    "urinary bladder": [
+        "urinary bladder, adult.CNhs10481.879-12E4"
+    ], 
+    "uterus": [
+        "uterus, adult pregnant day19.CNhs10497.590-15F5", 
+        "uterus, adult.CNhs10509.92-27E5"
+    ], 
+    "vagina": [
+        "vagina, adult.CNhs10502.89-27D5"
+    ], 
+    "vesicular gland": [
+        "vesicular gland, adult.CNhs10491.51-27F8"
+    ], 
+    "visual cortex": [
+        "visual cortex - wildtype, neonate N15, donor1.CNhs13031.10235-104A1", 
+        "visual cortex - wildtype, neonate N15, donor2.CNhs13032.10236-104A2", 
+        "visual cortex - wildtype, neonate N15, donor3.CNhs13033.10237-104A3", 
+        "visual cortex - wildtype, neonate N15, donor5.CNhs13820.10349-105D7", 
+        "visual cortex - wildtype, neonate N30, donor1.CNhs13034.10238-104A4", 
+        "visual cortex - wildtype, neonate N30, donor2.CNhs13035.10239-104A5", 
+        "visual cortex - wildtype, neonate N30, donor3.CNhs13036.10240-104A6", 
+        "visual cortex - wildtype, neonate N60-70, donor1.CNhs13037.10241-104A7", 
+        "visual cortex - wildtype, neonate N60-70, donor2.CNhs13038.10242-104A8", 
+        "visual cortex - wildtype, neonate N60-70, donor3.CNhs13039.10243-104A9", 
+        "visual cortex - Mecp knockout, neonate N15, donor1.CNhs13040.10244-104B1", 
+        "visual cortex - Mecp knockout, neonate N15, donor2.CNhs13041.10245-104B2", 
+        "visual cortex - Mecp knockout, neonate N15, donor3.CNhs13821.10350-105D8", 
+        "visual cortex - Mecp knockout, neonate N30, donor1.CNhs13042.10246-104B3", 
+        "visual cortex - Mecp knockout, neonate N30, donor2.CNhs13043.10247-104B4", 
+        "visual cortex - Mecp knockout, neonate N30, donor3.CNhs13044.10248-104B5", 
+        "visual cortex - Mecp knockout, neonate N60-70, donor1.CNhs13045.10249-104B6", 
+        "visual cortex - Mecp knockout, neonate N60-70, donor2.CNhs13046.10250-104B7", 
+        "visual cortex - Mecp knockout, neonate N60-70, donor3.CNhs13048.10251-104B8"
+    ]
+}
