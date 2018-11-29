@@ -8,7 +8,7 @@ scMatch is maintained by Rui Hou [rui.hou@research.uwa.edu.au]
 ```bat
    git clone https://github.com/asrhou/scMatch.git
 ```
-A truncated FANTOM5 reference dataset can be downloaded from https://github.com/asrhou/scMatch/tree/master/refDF/FANTOM5. The compressed files need to be decompressed before being used as the reference database.
+A truncated FANTOM5 reference dataset can be downloaded from https://github.com/asrhou/scMatch/tree/master/refDF/FANTOM5. The compressed files need to be decompressed before being used as the reference database. We also merged it with reference datasets from [SingleR](https://www.biorxiv.org/content/early/2018/03/22/284604), which can be downloaded from https://figshare.com/s/efd2969ce20fae5c118f.
 
 This tool provides command line utilities only for now.
 
