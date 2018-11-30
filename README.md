@@ -46,6 +46,13 @@ To annotate a scRNA-seq dataset 'GSE81861_Cell_Line_COUNT.csv' from [Li *et al.*
 ```bat
    python scMatch.py --refDS refDB/FANTOM5 --dFormat csv --testDS GSE81861_Cell_Line_COUNT.csv
 ```
+A snippet of the output for a test transcriptome looks like this:
+
+| sample name | Spearman correlation coefficient |
+| --- | --- |
+|lung adenocarcinoma cell line:A549.CNhs11275.10499-107C4 | 0.583425488 |
+|bile duct carcinoma cell line:TFK-1.CNhs11265.10496-107C1 | 0.551511709 |
+|hepatoma cell line:Li-7.CNhs11271.10484-107A7 | 0.545313045 |
 
 ### toTerms: Transfer the original sample name annotation vectors to the vectors of ontology terms.
 
@@ -66,3 +73,10 @@ To transfer the annotation results of 'GSE81861_Cell_Line_COUNT.csv' to the vect
 ```bat
    python toTerms.py --splF GSE81861_Cell_Line_COUNT/annotation_result_keep_all_genes --refDS FANTOM5
 ```
+A snippet of the output for a test transcriptome looks like this:
+
+| Ont Term | Avg Score |
+| --- | --- |
+| DOID:3910 ! lung adenocarcinoma | 0.54626792 |
+| DOID:4897 ! bile duct carcinoma | 0.538693164 |
+| DOID:4556 ! lung large cell carcinoma | 0.532440558 |
