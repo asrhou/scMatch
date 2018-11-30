@@ -42,7 +42,7 @@ def SPMAnno(refDB, keepZeros, testMethod, em):
         secondLayerHeader = ['sample name', 'Spearman correlation coefficient']
         spr_correlation = spr_correlation.sort_values(by=['Spearman correlation coefficient'], ascending=False)
         spr_correlation = spr_correlation.reset_index(drop=True)
-        return (firstLayerHeader, thirdLayerHeader, secondLayerHeader, spr_correlation)
+        return (firstLayerHeader, thirdLayerHeader, secondLayerHeader, spr_correlation, em.columns[0], spr_correlation.iloc[0,0], spr_correlation.iloc[0,1])
     elif testMethod == 'Pearson':
         pes_correlation = testrefDB.apply(lambda col: pearsonr(col.to_frame(), testCol)[0], axis=0)
         pes_correlation = pes_correlation.fillna(0).round(10).T.ix[:,0].reset_index()
@@ -50,7 +50,7 @@ def SPMAnno(refDB, keepZeros, testMethod, em):
         secondLayerHeader = ['sample name', 'Pearson correlation coefficient']
         pes_correlation = pes_correlation.sort_values(by=['Pearson correlation coefficient'], ascending=False)
         pes_correlation = pes_correlation.reset_index(drop=True)
-        return (firstLayerHeader, thirdLayerHeader, secondLayerHeader, pes_correlation)
+        return (firstLayerHeader, thirdLayerHeader, secondLayerHeader, pes_correlation, em.columns[0], pes_correlation.iloc[0,0], pes_correlation.iloc[0,1])
 
 #transfer given species gene symbols to hids
 def TransferToHids(refDS, species, geneList):
@@ -140,15 +140,23 @@ def AnnSCData(testType, em, refDS, refType, refTypeName, keepZeros, testMethod, 
         subMerged.to_excel(os.path.join(savefolder, refTypeName+"_%s_Part%04d.xlsx" % (testMethod, parts+1)))
     else:
         merged.to_excel(os.path.join(savefolder, refTypeName+"_%s.xlsx" % testMethod))
+        
+    #save top ann result
+    topAnn = pd.DataFrame({'cell':[i[4] for i in resultList], 'top sample':[i[5] for i in resultList], 'top correlation score':[i[6] for i in resultList]})
+    saveNameP = os.path.join(savefolder, refTypeName+"_%s_top_ann.csv" % (testMethod))
+    topAnn.to_csv(saveNameP, index=False, columns = ['cell', 'top sample', 'top correlation score'])
     print('##########DONE!')
     
 def SortAnno(testItem):
     oldcols = testItem.columns
+    cell = oldcols.get_level_values(0)[0]
     testItem.columns = ["name", "coefficient"]
     testItem = testItem.sort_values(by=['coefficient'], ascending=False)
+    topAnn = testItem.iloc[0,0]
+    topCoff = testItem.iloc[0,1]
     testItem.columns = oldcols
     testItem = testItem.reset_index(drop=True)
-    return testItem
+    return (testItem, cell, topAnn, topCoff)
 
 #start to annotate test dataset
 def main(testType, testFormat, testDS, refDS, refTypeList, keepZeros, testMethodList, coreNum):
@@ -169,12 +177,12 @@ def main(testType, testFormat, testDS, refDS, refTypeList, keepZeros, testMethod
     print('test dataset shape: %s genes, %s samples' % em.shape)
     
     hidSpecDict = {'9606':'human', '10090':'mouse'}
-    '''
+    
     for refType in refTypeList:
         print('##########annotating test data with %s data' % hidSpecDict[refType])
         for testMethod in testMethodList:
             AnnSCData(testType, em, refDS, refType, hidSpecDict[refType], keepZeros, testMethod, coreNum, savefolder)
-    '''
+
     if len(refTypeList) == 2:
         print('##########merging annotation data')
         rstFolder = 'annotation_result'
@@ -183,27 +191,38 @@ def main(testType, testFormat, testDS, refDS, refTypeList, keepZeros, testMethod
         else:
             rstFolder = rstFolder + '_keep_expressed_genes'
         savefolder = os.path.join(savefolder, rstFolder)
-        tomergeList = glob.glob(os.path.join(savefolder, "human*.xlsx"))
-        for tomerge in tomergeList:
-            #merge results
-            humanAnn = pd.read_excel(tomerge, header=[0,1,2])
-            humanAnn.columns = pd.MultiIndex.from_arrays([list(humanAnn.columns.get_level_values(0)),list(humanAnn.columns.get_level_values(2))], names=('identifier', 'annotation'))
-            mouseAnn = pd.read_excel(tomerge.replace('human_','mouse_'), header=[0,1,2])
-            mouseAnn.columns = pd.MultiIndex.from_arrays([list(mouseAnn.columns.get_level_values(0)),list(mouseAnn.columns.get_level_values(2))], names=('identifier', 'annotation'))
-            mergedAnn = pd.concat([humanAnn, mouseAnn])
+        for testMethod in testMethodList:
+            tomergeList = glob.glob(os.path.join(savefolder, "human*%s*.xlsx" % testMethod))
+            tomergeList = [i for i in tomergeList if "_Avg" not in i]
+            topAnnList = []
+            for tomerge in tomergeList:
+                #merge results
+                humanAnn = pd.read_excel(tomerge, header=[0,1,2])
+                humanAnn.columns = pd.MultiIndex.from_arrays([list(humanAnn.columns.get_level_values(0)),list(humanAnn.columns.get_level_values(2))], names=('identifier', 'annotation'))
+                mouseAnn = pd.read_excel(tomerge.replace('human_','mouse_'), header=[0,1,2])
+                mouseAnn.columns = pd.MultiIndex.from_arrays([list(mouseAnn.columns.get_level_values(0)),list(mouseAnn.columns.get_level_values(2))], names=('identifier', 'annotation'))
+                mergedAnn = pd.concat([humanAnn, mouseAnn])
+                
+                #sort merged results
+                #split merged results to single-cell merged results
+                mergedAnnList = np.split(mergedAnn, len(mergedAnn.columns)/2, axis=1)
+                
+                #annotate single-cell expression profiles in parallel
+                p = multiprocessing.Pool(coreNum)
+                resultList = p.map(SortAnno, mergedAnnList)
+                p.close()
+                p.join()
+                
+                mergedAnn = pd.concat([i[0] for i in resultList], axis=1)
+                mergedAnn.to_excel(tomerge.replace('human_','combined_'))
+                
+                #save top ann result
+                topAnn = pd.DataFrame({'cell':[i[1] for i in resultList], 'top sample':[i[2] for i in resultList], 'top correlation score':[i[3] for i in resultList]})
+                topAnnList.append(topAnn)
+            mergedAnn = pd.concat(topAnnList)
+            saveNameP = os.path.join(savefolder, "combined_%s_top_ann.csv" % (testMethod))
+            topAnn.to_csv(saveNameP, index=False, columns = ['cell', 'top sample', 'top correlation score'])
             
-            #sort merged results
-            #split merged results to single-cell merged results
-            mergedAnnList = np.split(mergedAnn, len(mergedAnn.columns)/2, axis=1)
-            
-            #annotate single-cell expression profiles in parallel
-            p = multiprocessing.Pool(coreNum)
-            resultList = p.map(SortAnno, mergedAnnList)
-            p.close()
-            p.join()
-            
-            mergedAnn = pd.concat(resultList, axis=1)
-            mergedAnn.to_excel(tomerge.replace('human_','combined_'))
         print('##########DONE!')
 
 if __name__ == "__main__":
