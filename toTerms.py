@@ -109,7 +109,7 @@ if __name__ == "__main__":
     
     #process arguments
     parser = argparse.ArgumentParser()
-    parser.add_argument('--splF', required=True, help='path to the origianl sample annotation folder which contains original sample annotation data')
+    parser.add_argument('--splF', required=True, help='path to the original sample annotation folder which contains original sample annotation data')
     parser.add_argument('--refDS', required=True, help='path to the folder of reference dataset(s)')
     parser.add_argument('--coreNum', type=int, default=1, help='number of the cores to use, default is 1')
     
