@@ -17,6 +17,7 @@ from scipy import io
 import multiprocessing
 from functools import partial
 
+#annotate the cell using given method
 def SPMAnno(refDB, keepZeros, testMethod, em):
     firstLayerHeader = [em.columns[0], em.columns[0]]
     testCol = em.ix[em[em.columns[0]]>0, [em.columns[0]]]
@@ -56,8 +57,9 @@ def SPMAnno(refDB, keepZeros, testMethod, em):
 def TransferToHids(refDS, species, geneList):
     hidCol = 0  # universal id for homology genes
     taxidCol = 1  # species id
-    geneSymbolCol = 3  # for jordan's data, it only has gene symbol
+    geneSymbolCol = 3  # gene symbol
 
+    # 'homologene.data' is stored in the reference database's folder
     homoDF = pd.read_csv(os.path.join(refDS, 'homologene.data'), sep='\t', index_col=None, header=None)
     # reduce the list to genes of the given species
     speciesDF = homoDF.ix[homoDF[taxidCol] == int(species),].set_index(geneSymbolCol)
@@ -169,12 +171,12 @@ def main(testType, testFormat, testDS, refDS, refTypeList, keepZeros, testMethod
     print('test dataset shape: %s genes, %s samples' % em.shape)
     
     hidSpecDict = {'9606':'human', '10090':'mouse'}
-    '''
+    
     for refType in refTypeList:
         print('##########annotating test data with %s data' % hidSpecDict[refType])
         for testMethod in testMethodList:
             AnnSCData(testType, em, refDS, refType, hidSpecDict[refType], keepZeros, testMethod, coreNum, savefolder)
-    '''
+    
     if len(refTypeList) == 2:
         print('##########merging annotation data')
         rstFolder = 'annotation_result'
