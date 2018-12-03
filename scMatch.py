@@ -159,7 +159,7 @@ def SortAnno(testItem):
     return (testItem, cell, topAnn, topCoff)
 
 #start to annotate test dataset
-def main(testType, testFormat, testDS, refDS, refTypeList, keepZeros, testMethodList, coreNum):
+def main(testType, testFormat, testDS, testGenes, refDS, refTypeList, keepZeros, testMethodList, coreNum):
     
     #load test data
     print('##########loading test data')
@@ -174,6 +174,14 @@ def main(testType, testFormat, testDS, refDS, refTypeList, keepZeros, testMethod
     else:
         em = pd.read_csv(testDS, index_col=0, header=0)
         savefolder = testDS[:-4]
+        
+    # remove unrelated genes
+    geneList = set(em.index)
+    if testGenes != 'none':
+        testGeneList = set(pd.read_csv(testGenes,index_col=None, header=0).columns)
+        geneList = testGeneList.intersection(testGeneList)
+        em = em.ix[~em.index.duplicated(keep='first'),]
+        em = em.ix[geneList,]
     print('test dataset shape: %s genes, %s samples' % em.shape)
     
     hidSpecDict = {'9606':'human', '10090':'mouse'}
@@ -235,6 +243,7 @@ if __name__ == "__main__":
     parser.add_argument('--dFormat', default='10x', help='10x (default) | csv')
     parser.add_argument('--testDS', required=True, help='path to the folder of test dataset if dtype is 10x, otherwise, the path to the file')
     parser.add_argument('--testMethod', default='s', help='s[pearman] (default) | p[earson] | both')
+    parser.add_argument('--testGenes', default='none', help='optional, path to the csv file whose first row is the genes used to calculate the correlation coefficient')
     parser.add_argument('--keepZeros', default='yes', help='y[es] (default) | n[o]')
     parser.add_argument('--coreNum', type=int, default=1, help='number of the cores to use, default=1')
     
@@ -301,7 +310,12 @@ if __name__ == "__main__":
             sys.exit("Cannot find 'genes.tsv' file in the folder of test dataset.")
         if not os.path.exists(os.path.join(opt.testDS, 'barcodes.tsv')):
             sys.exit("Cannot find 'barcodes.tsv' file in the folder of test dataset.")
-
+            
+    #check gene list 
+    if opt.testGenes != 'none' and opt.testGenes.endswith('.csv'):
+        if not os.path.exists(opt.testGenes):
+            sys.exit("Cannot find CSV file to obtain the test gene list.")
+    
     #check coreNum
     maxCoreNum = multiprocessing.cpu_count()
     if opt.coreNum > maxCoreNum:
@@ -323,9 +337,11 @@ if __name__ == "__main__":
         print('Keep genes with zero expreesion level: yes')
     else:
         print('Keep genes with zero expreesion level: no')
+    if opt.testGenes != 'none':
+        print('Test gene list: %s' % opt.testGenes)
     print('The number of cores to use: %s' % opt.coreNum)
     print('===================================================')
     
     #start to annotate test dataset
-    main(testType, opt.dFormat, opt.testDS, opt.refDS, refTypeList, keepZeros, testMethodList, opt.coreNum)
+    main(testType, opt.dFormat, opt.testDS, opt.testGenes, opt.refDS, refTypeList, keepZeros, testMethodList, opt.coreNum)
     #python scMatch.py --refDS FANTOM5 --dFormat csv --testDS GSE81861_Cell_Line_COUNT.csv --coreNum 4

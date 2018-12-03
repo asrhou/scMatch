@@ -21,8 +21,8 @@ This tool can annotate the given transcriptome data with sample names or ontolog
 ```
 scMatch.py [-h] [--refType REFTYPE] [--testType TESTTYPE] --refDS REFDS
                   [--dFormat DFORMAT] --testDS TESTDS
-                  [--testMethod TESTMETHOD] [--keepZeros KEEPZEROS]
-                  [--coreNum CORENUM]
+                  [--testMethod TESTMETHOD] [--testGenes TESTGENES]
+                  [--keepZeros KEEPZEROS] [--coreNum CORENUM]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -34,6 +34,9 @@ optional arguments:
                         otherwise, the path to the file
   --testMethod TESTMETHOD
                         s[pearman] (default) | p[earson] | both
+  --testGenes TESTGENES
+                        optional, path to the csv file whose first row is the
+                        genes used to calculate the correlation coefficient
   --keepZeros KEEPZEROS
                         y[es] (default) | n[o]
   --coreNum CORENUM     number of the cores to use, default=1
