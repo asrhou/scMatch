@@ -17,9 +17,8 @@ from scipy import io
 import multiprocessing
 from functools import partial
 
-def SPMAnno(refDB, keepZeros, testMethod, em):
-    firstLayerHeader = [em.columns[0], em.columns[0]]
-    testCol = em.ix[em[em.columns[0]]>0, [em.columns[0]]]
+def SPMAnno(refDB, keepZeros, testMethod, testCol):
+    firstLayerHeader = [testCol.columns[0], testCol.columns[0]]
     
     #find common genes between test data and ref data
     testRows = set(testCol.index)
@@ -42,7 +41,7 @@ def SPMAnno(refDB, keepZeros, testMethod, em):
         secondLayerHeader = ['sample name', 'Spearman correlation coefficient']
         spr_correlation = spr_correlation.sort_values(by=['Spearman correlation coefficient'], ascending=False)
         spr_correlation = spr_correlation.reset_index(drop=True)
-        return (firstLayerHeader, thirdLayerHeader, secondLayerHeader, spr_correlation, em.columns[0], spr_correlation.iloc[0,0], spr_correlation.iloc[0,1])
+        return (firstLayerHeader, thirdLayerHeader, secondLayerHeader, spr_correlation, testCol.columns[0], spr_correlation.iloc[0,0], spr_correlation.iloc[0,1])
     elif testMethod == 'Pearson':
         pes_correlation = testrefDB.apply(lambda col: pearsonr(col.to_frame(), testCol)[0], axis=0)
         pes_correlation = pes_correlation.fillna(0).round(10).T.ix[:,0].reset_index()
@@ -50,7 +49,7 @@ def SPMAnno(refDB, keepZeros, testMethod, em):
         secondLayerHeader = ['sample name', 'Pearson correlation coefficient']
         pes_correlation = pes_correlation.sort_values(by=['Pearson correlation coefficient'], ascending=False)
         pes_correlation = pes_correlation.reset_index(drop=True)
-        return (firstLayerHeader, thirdLayerHeader, secondLayerHeader, pes_correlation, em.columns[0], pes_correlation.iloc[0,0], pes_correlation.iloc[0,1])
+        return (firstLayerHeader, thirdLayerHeader, secondLayerHeader, pes_correlation, testCol.columns[0], pes_correlation.iloc[0,0], pes_correlation.iloc[0,1])
 
 #transfer given species gene symbols to hids
 def TransferToHids(refDS, species, geneList):
