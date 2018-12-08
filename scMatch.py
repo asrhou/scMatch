@@ -128,7 +128,7 @@ def AnnSCData(testType, em, refDS, refType, refTypeName, keepZeros, testMethod, 
         os.mkdir(savefolder)
         
     #save file
-    print('##########saving annotation results')
+    print('##########saving annotation results in the folder: %s' % savefolder)
     if len(merged.columns) > 8190:
         colNum = len(merged.columns)
         parts = colNum / 8000
@@ -141,9 +141,12 @@ def AnnSCData(testType, em, refDS, refType, refTypeName, keepZeros, testMethod, 
         merged.to_excel(os.path.join(savefolder, refTypeName+"_%s.xlsx" % testMethod))
         
     #save top ann result
-    topAnn = pd.DataFrame({'cell':[i[4] for i in resultList], 'top sample':[i[5] for i in resultList], 'top correlation score':[i[6] for i in resultList]})
+    topAnn = pd.DataFrame({'cell':[i[4] for i in resultList], 'cell type':[''] * len(resultList), 'top sample':[i[5] for i in resultList], 'top correlation score':[i[6] for i in resultList]})
+    mapData = pd.read_csv(os.path.join(refDS, '%s_map.csv' % refType), index_col=0, header=0)
+    for idx in topAnn.index:
+        topAnn.ix[idx, 'cell type'] = mapData.ix[topAnn.ix[idx, 'top sample'], 'cell type']
     saveNameP = os.path.join(savefolder, refTypeName+"_%s_top_ann.csv" % (testMethod))
-    topAnn.to_csv(saveNameP, index=False, columns = ['cell', 'top sample', 'top correlation score'])
+    topAnn.to_csv(saveNameP, index=False, columns = ['cell', 'cell type', 'top sample', 'top correlation score'])
     print('##########DONE!')
     
 def SortAnno(testItem):
@@ -189,7 +192,7 @@ def main(testType, testFormat, testDS, testGenes, refDS, refTypeList, keepZeros,
         print('##########annotating test data with %s data' % hidSpecDict[refType])
         for testMethod in testMethodList:
             AnnSCData(testType, em, refDS, refType, hidSpecDict[refType], keepZeros, testMethod, coreNum, savefolder)
-
+            
     if len(refTypeList) == 2:
         print('##########merging annotation data')
         rstFolder = 'annotation_result'
@@ -224,11 +227,16 @@ def main(testType, testFormat, testDS, testGenes, refDS, refTypeList, keepZeros,
                 mergedAnn.to_excel(tomerge.replace('human_','combined_'))
                 
                 #save top ann result
-                topAnn = pd.DataFrame({'cell':[i[1] for i in resultList], 'top sample':[i[2] for i in resultList], 'top correlation score':[i[3] for i in resultList]})
+                topAnn = pd.DataFrame({'cell':[i[1] for i in resultList], 'cell type':[''] * len(resultList), 'top sample':[i[2] for i in resultList], 'top correlation score':[i[3] for i in resultList]})
                 topAnnList.append(topAnn)
             mergedAnn = pd.concat(topAnnList)
+            mapData1 = pd.read_csv(os.path.join(refDS, '9606_map.csv'), index_col=0, header=0)
+            mapData2 = pd.read_csv(os.path.join(refDS, '10090_map.csv'), index_col=0, header=0)
+            mapData = pd.concat([mapData1, mapData2])
+            for idx in mergedAnn.index:
+                mergedAnn.ix[idx, 'cell type'] = mapData.ix[mergedAnn.ix[idx, 'top sample'], 'cell type']
             saveNameP = os.path.join(savefolder, "combined_%s_top_ann.csv" % (testMethod))
-            topAnn.to_csv(saveNameP, index=False, columns = ['cell', 'top sample', 'top correlation score'])
+            mergedAnn.to_csv(saveNameP, index=False, columns = ['cell', 'cell type', 'top sample', 'top correlation score'])
             
         print('##########DONE!')
 

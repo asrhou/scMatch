@@ -71,6 +71,7 @@ def DrawScatters(savefolder, annoFile, visMethod, cords, annos):
     layout = go.Layout(legend=dict(orientation="h"),autosize=True,showlegend=True)
     fig = go.Figure(data=data, layout=layout)
     annText = os.path.basename(annoFile).split('.')[0]
+    print('##########saving the plot in the folder: %s' % savefolder)
     plotly.offline.plot(fig, filename=os.path.join(savefolder, '%s_%s.html' % (visMethod, annText)))
 
 #start to visualise test dataset
@@ -89,11 +90,11 @@ def main(testFormat, testDS, annoFile, visMethod):
         em = pd.read_csv(testDS, index_col=0, header=0)
         savefolder = testDS[:-4]
         
-    print('##########Reducing dimensions')
+    print('##########reducing dimensions')
     cords = CalCords(em, visMethod)
     annos = pd.read_csv(annoFile, index_col=0, header=0)
     
-    print('##########Darwing the scatter plot')
+    print('##########darwing the scatter plot')
     DrawScatters(savefolder, annoFile, visMethod, cords, annos)
     print('##########DONE!')
 
