@@ -13,7 +13,12 @@ import pandas as pd
 import os, sys, glob
 from scipy import io
 
-def CalCords(em, visMethod):
+def CalCords(savefolder, em, visMethod):
+    cordFile = os.path.join(savefolder, 'cords_%s.csv' % visMethod)
+    if os.path.exists(cordFile):
+        cords = pd.read_csv(cordFile, index_col=0, header=0)
+        return cords
+        
     x = em.T.values
     from sklearn.preprocessing import StandardScaler
     x = StandardScaler().fit_transform(x)
@@ -31,48 +36,60 @@ def CalCords(em, visMethod):
         import umap
         umapComponents = umap.UMAP(n_components=2).fit_transform(principalComponents)
         cords = pd.DataFrame(data = umapComponents, columns = ['x', 'y'], index = em.columns)
+    cords.index.name = 'barcode'    
+    cords.to_csv(cordFile, index=True, header=True)
     return cords
 
 def DrawScatters(savefolder, annoFile, visMethod, cords, annos):
-    
-    annotationList = sorted(list(set(annos.iloc[:,0])))
-    
-    import seaborn as sns 
-    colorList = sns.hls_palette(n_colors=len(annotationList))
-    
     import plotly
     import plotly.graph_objs as go
-    data = []
-    for annoIdx in range(len(annotationList)):
-        annoNames = annotationList[annoIdx]
-        indicesOfAnno = annos[annos.columns[0]]==annoNames
-        text = []
-        for idx in annos.index[indicesOfAnno]:
-            show_text = 'annotation: %s, barcode: %s' % (annoNames, idx)
-            text.append(show_text)
-        trace = go.Scatter(
-            x = cords.ix[annos.index[indicesOfAnno],'x'],
-            y = cords.ix[annos.index[indicesOfAnno],'y'],
-            name = annoNames,
-            mode = 'markers',
-            marker=dict(
-                color='rgb(%s, %s, %s)' % colorList[annoIdx],
-                size=5,
-                symbol='circle',
-                line=dict(
-                    color='rgb(204, 204, 204)',
-                    width=1
-                ),
-                opacity=0.9
-            ),
-            text = text,
-         )
-        data.append(trace)
-    layout = go.Layout(legend=dict(orientation="h"),autosize=True,showlegend=True)
-    fig = go.Figure(data=data, layout=layout)
     annText = os.path.basename(annoFile).split('.')[0]
-    print('##########saving the plot in the folder: %s' % savefolder)
-    plotly.offline.plot(fig, filename=os.path.join(savefolder, '%s_%s.html' % (visMethod, annText)))
+        
+    for kind in ['cell type', 'top sample']:
+        if kind not in annos.columns:
+            continue
+        annotationList = sorted(list(set(annos.ix[:,kind])))
+        
+        import seaborn as sns 
+        colorList = sns.hls_palette(n_colors=len(annotationList))
+        
+        data = []
+        annoLen = 0
+        for annoIdx in range(len(annotationList)):
+            annoNames = annotationList[annoIdx]
+            if len(annoNames) > annoLen:
+                annoLen = len(annoNames)
+            indicesOfAnno = annos[kind]==annoNames
+            text = []
+            for idx in annos.index[indicesOfAnno]:
+                show_text = '%s: %s, barcode: %s' % (kind, annoNames, idx)
+                text.append(show_text)
+            trace = go.Scatter(
+                x = cords.ix[annos.index[indicesOfAnno],'x'],
+                y = cords.ix[annos.index[indicesOfAnno],'y'],
+                name = annoNames,
+                mode = 'markers',
+                marker=dict(
+                    color='rgb(%s, %s, %s)' % colorList[annoIdx],
+                    size=5,
+                    symbol='circle',
+                    line=dict(
+                        color='rgb(204, 204, 204)',
+                        width=1
+                    ),
+                    opacity=0.9
+                ),
+                text = text,
+             )
+            data.append(trace)
+        if annoLen < 35:
+            layout = go.Layout(legend=dict(orientation="v"),autosize=True,showlegend=True)
+        else:
+            layout = go.Layout(legend=dict(orientation="v"),autosize=True,showlegend=False)
+        fig = go.Figure(data=data, layout=layout)
+        fn = os.path.join(savefolder, '%s_%s_%s.html' % (annText, kind.replace(' ', '_'), visMethod))
+        print('##########saving plot: %s' % fn)
+        plotly.offline.plot(fig, filename=fn)
 
 #start to visualise test dataset
 def main(testFormat, testDS, annoFile, visMethod):
@@ -91,10 +108,13 @@ def main(testFormat, testDS, annoFile, visMethod):
         savefolder = testDS[:-4]
         
     print('##########reducing dimensions')
-    cords = CalCords(em, visMethod)
+    cords = CalCords(savefolder, em, visMethod)
     annos = pd.read_csv(annoFile, index_col=0, header=0)
+    commonIdx = set(cords.index).intersection(set(annos.index))
+    cords = cords.ix[commonIdx,]
+    annos = annos.ix[commonIdx,]
     
-    print('##########darwing the scatter plot')
+    print('##########darwing the scatter plots in the folder: %s' % savefolder)
     DrawScatters(savefolder, annoFile, visMethod, cords, annos)
     print('##########DONE!')
 
