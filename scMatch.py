@@ -131,7 +131,7 @@ def AnnSCData(testType, em, refDS, refType, refTypeName, keepZeros, testMethod, 
     print('##########saving annotation results in the folder: %s' % savefolder)
     if len(merged.columns) > 8190:
         colNum = len(merged.columns)
-        parts = colNum / 8000
+        parts = int(colNum / 8000)
         for partIdx in range(parts):
             subMerged = merged.iloc[:,8000*partIdx:8000*(partIdx+1)]
             subMerged.to_excel(os.path.join(savefolder, refTypeName+"_%s_Part%04d.xlsx" % (testMethod, partIdx+1)))
