@@ -31,8 +31,8 @@ def SPMAnno(refDB, keepZeros, testMethod, testCol):
     thirdLayerHeader = [commonRowsLen, commonRowsLen]
     
     #only keep non-zero genes
-    testCol = testCol.ix[commonRows, ].fillna(0.0)
-    testrefDB = refDB.ix[commonRows, ].fillna(0.0)
+    testCol = testCol.loc[commonRows, ].fillna(0.0)
+    testrefDB = refDB.loc[commonRows, ].fillna(0.0)
     
     if testMethod == 'Spearman':
         spr_correlation = testrefDB.apply(lambda col: spearmanr(col, testCol)[0], axis=0)
