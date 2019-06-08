@@ -10,6 +10,8 @@ scMatch is maintained by Rui Hou [rui.hou@research.uwa.edu.au]
 ```
 A truncated FANTOM5 reference dataset can be downloaded from https://github.com/asrhou/scMatch/tree/master/refDB/FANTOM5. The compressed files need to be decompressed before being used as the reference database. We also merged it with reference datasets from [SingleR](https://www.biorxiv.org/content/early/2018/03/22/284604), which can be downloaded from https://figshare.com/s/efd2969ce20fae5c118f.
 
+Carlos Biagi Jr [biagi@usp.br] is maintaining a scMatch Docker image of scMatch in https://hub.docker.com/r/biagii/scmatch and https://github.com/cbiagii/scmatch. The Docker image has all required packages installed and contains both reference datasets mentioned above. This Docker image can greatly simplify the deployment of scMatch!
+
 This tool provides command line utilities only for now.
 
 ## Command Line Utilities
@@ -56,6 +58,8 @@ A snippet of the output for a test transcriptome looks like this:
 |lung adenocarcinoma cell line:A549.CNhs11275.10499-107C4 | 0.583425488 |
 |bile duct carcinoma cell line:TFK-1.CNhs11265.10496-107C1 | 0.551511709 |
 |hepatoma cell line:Li-7.CNhs11271.10484-107A7 | 0.545313045 |
+
+*Note: You have to change the row names of 'GSE81861_Cell_Line_COUNT.csv' to gene symbols before you run scMatch.*
 
 ### toTerms: Transfer the original sample name annotation vectors to the vectors of ontology terms.
 
