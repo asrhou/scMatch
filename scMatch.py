@@ -61,7 +61,7 @@ def TransferToHids(refDS, species, geneList):
     # reduce the list to genes of the given species
     speciesDF = homoDF.ix[homoDF[taxidCol] == int(species),].set_index(geneSymbolCol)
 
-    geneDF = speciesDF.ix[geneList,]
+    geneDF = speciesDF.loc[speciesDF.index.isin(geneList)]
     notnaGenes = geneDF[geneDF[hidCol].notnull()]
     notnaGenes = notnaGenes.ix[~notnaGenes[hidCol].duplicated(keep='first'),]
     notnaGenesSymbols = list(notnaGenes.index)
