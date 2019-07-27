@@ -169,7 +169,10 @@ def main(testType, testFormat, testDS, testGenes, refDS, refTypeList, keepZeros,
         fileItem = glob.glob(os.path.join(testDS, "matrix.mtx"))[0]
         em = io.mmread(fileItem)
         em = em.tocsr().toarray()
-        row = pd.read_table(fileItem[:-10]+"genes.tsv", header=None, index_col=None)
+        if os.path.exists(os.path.join(opt.testDS, 'genes.tsv')):
+            row = pd.read_table(fileItem[:-10]+"genes.tsv", header=None, index_col=None)
+        else:
+            row = pd.read_table(fileItem[:-10]+"features.tsv", header=None, index_col=None)
         col = pd.read_table(fileItem[:-10]+"barcodes.tsv", header=None, index_col=None)
         em = pd.DataFrame(em, index=row.T.values[1], columns=col.T.values[0])
         savefolder = testDS
@@ -314,7 +317,8 @@ if __name__ == "__main__":
         if not os.path.exists(os.path.join(opt.testDS, 'matrix.mtx')):
             sys.exit("Cannot find 'matrix.mtx' file in the folder of test dataset.")
         if not os.path.exists(os.path.join(opt.testDS, 'genes.tsv')):
-            sys.exit("Cannot find 'genes.tsv' file in the folder of test dataset.")
+            if not os.path.exists(os.path.join(opt.testDS, 'features.tsv')):
+                sys.exit("Cannot find 'genes.tsv' or 'features.tsv' file in the folder of test dataset.")
         if not os.path.exists(os.path.join(opt.testDS, 'barcodes.tsv')):
             sys.exit("Cannot find 'barcodes.tsv' file in the folder of test dataset.")
             
