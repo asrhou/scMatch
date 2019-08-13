@@ -88,7 +88,7 @@ A snippet of the output for a test transcriptome looks like this:
 | DOID:4897 ! bile duct carcinoma | 0.538693164 |
 | DOID:4556 ! lung large cell carcinoma | 0.532440558 |
 
-### visAnnos.py: Visulise the annotation results from scMatch.py and toTerms.py.
+### visAnnos.py: Visualise the annotation results from scMatch.py and toTerms.py.
 
 ```
 visAnnos.py [-h] --testDS TESTDS [--dFormat DFORMAT] --annoFile
