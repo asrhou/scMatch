@@ -330,7 +330,7 @@ if __name__ == "__main__":
     #check coreNum
     maxCoreNum = multiprocessing.cpu_count()
     if opt.coreNum > maxCoreNum:
-        sys.exit("There are only %s cores availble, less than %s cores." % (maxCoreNum, opt.coreNum))
+        sys.exit("There are only %s cores available, less than %s cores." % (maxCoreNum, opt.coreNum))
         
     #pass argument check, show input data
     print('===================================================')
@@ -345,9 +345,9 @@ if __name__ == "__main__":
         print('Test data are in the file: %s' % opt.testDS)
     print('The correlation method: %s' % opt.testMethod)
     if keepZeros:
-        print('Keep genes with zero expreesion level: yes')
+        print('Keep genes with zero expression level: yes')
     else:
-        print('Keep genes with zero expreesion level: no')
+        print('Keep genes with zero expression level: no')
     if opt.testGenes != 'none':
         print('Test gene list: %s' % opt.testGenes)
     print('The number of cores to use: %s' % opt.coreNum)

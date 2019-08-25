@@ -88,7 +88,7 @@ A snippet of the output for a test transcriptome looks like this:
 | DOID:4897 ! bile duct carcinoma | 0.538693164 |
 | DOID:4556 ! lung large cell carcinoma | 0.532440558 |
 
-### visAnnos.py: Visulise the annotation results from scMatch.py and toTerms.py.
+### visAnnos.py: Visualise the annotation results from scMatch.py and toTerms.py.
 
 ```
 visAnnos.py [-h] --testDS TESTDS [--dFormat DFORMAT] --annoFile
@@ -104,7 +104,7 @@ optional arguments:
                         p[ca] (default) | t[sne] | u[map]
 ```
 
-If users have installed [seaborn](https://seaborn.pydata.org/), [scikit-learn](https://scikit-learn.org/stable/), [umap](https://github.com/lmcinnes/umap) and [plotly](https://plot.ly/python/), then visAnnos can arrange single cells in a 2D space based on the output of PCA, tSNE, or UMAP and generated an interactive plot using plotly in a html file. The cells are colored based on the annotations in the file like: 'human_Spearman_top_ann.csv' from scMatch.py and 'human_Spearman_Avg_top_ann.csv' from toTerms.py.
+If users have installed [seaborn](https://seaborn.pydata.org/), [scikit-learn](https://scikit-learn.org/stable/), [umap](https://github.com/lmcinnes/umap) and [plotly](https://plot.ly/python/), then visAnnos can arrange single cells in a 2D space based on the output of PCA, tSNE, or UMAP and generated an interactive plot using plotly in an html file. The cells are colored based on the annotations in the file like: 'human_Spearman_top_ann.csv' from scMatch.py and 'human_Spearman_Avg_top_ann.csv' from toTerms.py.
 
 To visualise the annotation results of 'GSE81861_Cell_Line_COUNT.csv' through UMAP, use the following commands
 ```bat
