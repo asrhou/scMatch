@@ -83,9 +83,9 @@ def main(splFileList, refDS, coreNum):
         print('#####processing %s' % splFile)
             
         if 'combined' in splFile:
-            currAnn = pd.read_excel(splFile, header=[0,1])
+            currAnn = pd.read_excel(splFile, index_col=0, header=[0,1])
         else:
-            currAnn = pd.read_excel(splFile, header=[0,1,2])
+            currAnn = pd.read_excel(splFile, index_col=0, header=[0,1,2])
             currAnn.columns = pd.MultiIndex.from_arrays([list(currAnn.columns.get_level_values(0)),list(currAnn.columns.get_level_values(2))], names=('identifier', 'annotation'))
         
         if 'human' in splFile:

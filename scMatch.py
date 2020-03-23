@@ -17,10 +17,8 @@ from scipy import io
 import multiprocessing
 from functools import partial
 
-#annotate the cell using given method
-def SPMAnno(refDB, keepZeros, testMethod, em):
-    firstLayerHeader = [em.columns[0], em.columns[0]]
-    testCol = em.ix[em[em.columns[0]]>0, [em.columns[0]]]
+def SPMAnno(refDB, keepZeros, testMethod, testCol):
+    firstLayerHeader = [testCol.columns[0], testCol.columns[0]]
     
     #find common genes between test data and ref data
     testRows = set(testCol.index)
@@ -33,8 +31,8 @@ def SPMAnno(refDB, keepZeros, testMethod, em):
     thirdLayerHeader = [commonRowsLen, commonRowsLen]
     
     #only keep non-zero genes
-    testCol = testCol.ix[commonRows, ].fillna(0.0)
-    testrefDB = refDB.ix[commonRows, ].fillna(0.0)
+    testCol = testCol.loc[commonRows, ].fillna(0.0)
+    testrefDB = refDB.loc[commonRows, ].fillna(0.0)
     
     if testMethod == 'Spearman':
         spr_correlation = testrefDB.apply(lambda col: spearmanr(col, testCol)[0], axis=0)
@@ -43,7 +41,7 @@ def SPMAnno(refDB, keepZeros, testMethod, em):
         secondLayerHeader = ['sample name', 'Spearman correlation coefficient']
         spr_correlation = spr_correlation.sort_values(by=['Spearman correlation coefficient'], ascending=False)
         spr_correlation = spr_correlation.reset_index(drop=True)
-        return (firstLayerHeader, thirdLayerHeader, secondLayerHeader, spr_correlation)
+        return (firstLayerHeader, thirdLayerHeader, secondLayerHeader, spr_correlation, testCol.columns[0], spr_correlation.iloc[0,0], spr_correlation.iloc[0,1])
     elif testMethod == 'Pearson':
         pes_correlation = testrefDB.apply(lambda col: pearsonr(col.to_frame(), testCol)[0], axis=0)
         pes_correlation = pes_correlation.fillna(0).round(10).T.ix[:,0].reset_index()
@@ -51,20 +49,19 @@ def SPMAnno(refDB, keepZeros, testMethod, em):
         secondLayerHeader = ['sample name', 'Pearson correlation coefficient']
         pes_correlation = pes_correlation.sort_values(by=['Pearson correlation coefficient'], ascending=False)
         pes_correlation = pes_correlation.reset_index(drop=True)
-        return (firstLayerHeader, thirdLayerHeader, secondLayerHeader, pes_correlation)
+        return (firstLayerHeader, thirdLayerHeader, secondLayerHeader, pes_correlation, testCol.columns[0], pes_correlation.iloc[0,0], pes_correlation.iloc[0,1])
 
 #transfer given species gene symbols to hids
 def TransferToHids(refDS, species, geneList):
     hidCol = 0  # universal id for homology genes
     taxidCol = 1  # species id
-    geneSymbolCol = 3  # gene symbol
+    geneSymbolCol = 3  # for jordan's data, it only has gene symbol
 
-    # 'homologene.data' is stored in the reference database's folder
     homoDF = pd.read_csv(os.path.join(refDS, 'homologene.data'), sep='\t', index_col=None, header=None)
     # reduce the list to genes of the given species
     speciesDF = homoDF.ix[homoDF[taxidCol] == int(species),].set_index(geneSymbolCol)
 
-    geneDF = speciesDF.ix[geneList,]
+    geneDF = speciesDF.loc[speciesDF.index.isin(geneList)]
     notnaGenes = geneDF[geneDF[hidCol].notnull()]
     notnaGenes = notnaGenes.ix[~notnaGenes[hidCol].duplicated(keep='first'),]
     notnaGenesSymbols = list(notnaGenes.index)
@@ -131,10 +128,10 @@ def AnnSCData(testType, em, refDS, refType, refTypeName, keepZeros, testMethod, 
         os.mkdir(savefolder)
         
     #save file
-    print('##########saving annotation results')
+    print('##########saving annotation results in the folder: %s' % savefolder)
     if len(merged.columns) > 8190:
         colNum = len(merged.columns)
-        parts = colNum / 8000
+        parts = int(colNum / 8000)
         for partIdx in range(parts):
             subMerged = merged.iloc[:,8000*partIdx:8000*(partIdx+1)]
             subMerged.to_excel(os.path.join(savefolder, refTypeName+"_%s_Part%04d.xlsx" % (testMethod, partIdx+1)))
@@ -142,18 +139,29 @@ def AnnSCData(testType, em, refDS, refType, refTypeName, keepZeros, testMethod, 
         subMerged.to_excel(os.path.join(savefolder, refTypeName+"_%s_Part%04d.xlsx" % (testMethod, parts+1)))
     else:
         merged.to_excel(os.path.join(savefolder, refTypeName+"_%s.xlsx" % testMethod))
+        
+    #save top ann result
+    topAnn = pd.DataFrame({'cell':[i[4] for i in resultList], 'cell type':[''] * len(resultList), 'top sample':[i[5] for i in resultList], 'top correlation score':[i[6] for i in resultList]})
+    mapData = pd.read_csv(os.path.join(refDS, '%s_map.csv' % refType), index_col=0, header=0)
+    for idx in topAnn.index:
+        topAnn.ix[idx, 'cell type'] = mapData.ix[topAnn.ix[idx, 'top sample'], 'cell type']
+    saveNameP = os.path.join(savefolder, refTypeName+"_%s_top_ann.csv" % (testMethod))
+    topAnn.to_csv(saveNameP, index=False, columns = ['cell', 'cell type', 'top sample', 'top correlation score'])
     print('##########DONE!')
     
 def SortAnno(testItem):
     oldcols = testItem.columns
+    cell = oldcols.get_level_values(0)[0]
     testItem.columns = ["name", "coefficient"]
     testItem = testItem.sort_values(by=['coefficient'], ascending=False)
+    topAnn = testItem.iloc[0,0]
+    topCoff = testItem.iloc[0,1]
     testItem.columns = oldcols
     testItem = testItem.reset_index(drop=True)
-    return testItem
+    return (testItem, cell, topAnn, topCoff)
 
 #start to annotate test dataset
-def main(testType, testFormat, testDS, refDS, refTypeList, keepZeros, testMethodList, coreNum):
+def main(testType, testFormat, testDS, testGenes, refDS, refTypeList, keepZeros, testMethodList, coreNum):
     
     #load test data
     print('##########loading test data')
@@ -161,13 +169,24 @@ def main(testType, testFormat, testDS, refDS, refTypeList, keepZeros, testMethod
         fileItem = glob.glob(os.path.join(testDS, "matrix.mtx"))[0]
         em = io.mmread(fileItem)
         em = em.tocsr().toarray()
-        row = pd.read_table(fileItem[:-10]+"genes.tsv", header=None, index_col=None)
+        if os.path.exists(os.path.join(opt.testDS, 'genes.tsv')):
+            row = pd.read_table(fileItem[:-10]+"genes.tsv", header=None, index_col=None)
+        else:
+            row = pd.read_table(fileItem[:-10]+"features.tsv", header=None, index_col=None)
         col = pd.read_table(fileItem[:-10]+"barcodes.tsv", header=None, index_col=None)
         em = pd.DataFrame(em, index=row.T.values[1], columns=col.T.values[0])
         savefolder = testDS
     else:
         em = pd.read_csv(testDS, index_col=0, header=0)
         savefolder = testDS[:-4]
+        
+    # remove unrelated genes
+    geneList = set(em.index)
+    if testGenes != 'none':
+        testGeneList = set(pd.read_csv(testGenes,index_col=None, header=0).columns)
+        geneList = testGeneList.intersection(testGeneList)
+        em = em.ix[~em.index.duplicated(keep='first'),]
+        em = em.ix[geneList,]
     print('test dataset shape: %s genes, %s samples' % em.shape)
     
     hidSpecDict = {'9606':'human', '10090':'mouse'}
@@ -176,7 +195,7 @@ def main(testType, testFormat, testDS, refDS, refTypeList, keepZeros, testMethod
         print('##########annotating test data with %s data' % hidSpecDict[refType])
         for testMethod in testMethodList:
             AnnSCData(testType, em, refDS, refType, hidSpecDict[refType], keepZeros, testMethod, coreNum, savefolder)
-    
+            
     if len(refTypeList) == 2:
         print('##########merging annotation data')
         rstFolder = 'annotation_result'
@@ -185,27 +204,43 @@ def main(testType, testFormat, testDS, refDS, refTypeList, keepZeros, testMethod
         else:
             rstFolder = rstFolder + '_keep_expressed_genes'
         savefolder = os.path.join(savefolder, rstFolder)
-        tomergeList = glob.glob(os.path.join(savefolder, "human*.xlsx"))
-        for tomerge in tomergeList:
-            #merge results
-            humanAnn = pd.read_excel(tomerge, header=[0,1,2])
-            humanAnn.columns = pd.MultiIndex.from_arrays([list(humanAnn.columns.get_level_values(0)),list(humanAnn.columns.get_level_values(2))], names=('identifier', 'annotation'))
-            mouseAnn = pd.read_excel(tomerge.replace('human_','mouse_'), header=[0,1,2])
-            mouseAnn.columns = pd.MultiIndex.from_arrays([list(mouseAnn.columns.get_level_values(0)),list(mouseAnn.columns.get_level_values(2))], names=('identifier', 'annotation'))
-            mergedAnn = pd.concat([humanAnn, mouseAnn])
+        for testMethod in testMethodList:
+            tomergeList = glob.glob(os.path.join(savefolder, "human*%s*.xlsx" % testMethod))
+            tomergeList = [i for i in tomergeList if "_Avg" not in i]
+            topAnnList = []
+            for tomerge in tomergeList:
+                #merge results
+                humanAnn = pd.read_excel(tomerge, header=[0,1,2])
+                humanAnn.columns = pd.MultiIndex.from_arrays([list(humanAnn.columns.get_level_values(0)),list(humanAnn.columns.get_level_values(2))], names=('identifier', 'annotation'))
+                mouseAnn = pd.read_excel(tomerge.replace('human_','mouse_'), header=[0,1,2])
+                mouseAnn.columns = pd.MultiIndex.from_arrays([list(mouseAnn.columns.get_level_values(0)),list(mouseAnn.columns.get_level_values(2))], names=('identifier', 'annotation'))
+                mergedAnn = pd.concat([humanAnn, mouseAnn])
+                
+                #sort merged results
+                #split merged results to single-cell merged results
+                mergedAnnList = np.split(mergedAnn, len(mergedAnn.columns)/2, axis=1)
+                
+                #annotate single-cell expression profiles in parallel
+                p = multiprocessing.Pool(coreNum)
+                resultList = p.map(SortAnno, mergedAnnList)
+                p.close()
+                p.join()
+                
+                mergedAnn = pd.concat([i[0] for i in resultList], axis=1)
+                mergedAnn.to_excel(tomerge.replace('human_','combined_'))
+                
+                #save top ann result
+                topAnn = pd.DataFrame({'cell':[i[1] for i in resultList], 'cell type':[''] * len(resultList), 'top sample':[i[2] for i in resultList], 'top correlation score':[i[3] for i in resultList]})
+                topAnnList.append(topAnn)
+            mergedAnn = pd.concat(topAnnList)
+            mapData1 = pd.read_csv(os.path.join(refDS, '9606_map.csv'), index_col=0, header=0)
+            mapData2 = pd.read_csv(os.path.join(refDS, '10090_map.csv'), index_col=0, header=0)
+            mapData = pd.concat([mapData1, mapData2])
+            for idx in mergedAnn.index:
+                mergedAnn.ix[idx, 'cell type'] = mapData.ix[mergedAnn.ix[idx, 'top sample'], 'cell type']
+            saveNameP = os.path.join(savefolder, "combined_%s_top_ann.csv" % (testMethod))
+            mergedAnn.to_csv(saveNameP, index=False, columns = ['cell', 'cell type', 'top sample', 'top correlation score'])
             
-            #sort merged results
-            #split merged results to single-cell merged results
-            mergedAnnList = np.split(mergedAnn, len(mergedAnn.columns)/2, axis=1)
-            
-            #annotate single-cell expression profiles in parallel
-            p = multiprocessing.Pool(coreNum)
-            resultList = p.map(SortAnno, mergedAnnList)
-            p.close()
-            p.join()
-            
-            mergedAnn = pd.concat(resultList, axis=1)
-            mergedAnn.to_excel(tomerge.replace('human_','combined_'))
         print('##########DONE!')
 
 if __name__ == "__main__":
@@ -218,6 +253,7 @@ if __name__ == "__main__":
     parser.add_argument('--dFormat', default='10x', help='10x (default) | csv')
     parser.add_argument('--testDS', required=True, help='path to the folder of test dataset if dtype is 10x, otherwise, the path to the file')
     parser.add_argument('--testMethod', default='s', help='s[pearman] (default) | p[earson] | both')
+    parser.add_argument('--testGenes', default='none', help='optional, path to the csv file whose first row is the genes used to calculate the correlation coefficient')
     parser.add_argument('--keepZeros', default='yes', help='y[es] (default) | n[o]')
     parser.add_argument('--coreNum', type=int, default=1, help='number of the cores to use, default=1')
     
@@ -281,14 +317,20 @@ if __name__ == "__main__":
         if not os.path.exists(os.path.join(opt.testDS, 'matrix.mtx')):
             sys.exit("Cannot find 'matrix.mtx' file in the folder of test dataset.")
         if not os.path.exists(os.path.join(opt.testDS, 'genes.tsv')):
-            sys.exit("Cannot find 'genes.tsv' file in the folder of test dataset.")
+            if not os.path.exists(os.path.join(opt.testDS, 'features.tsv')):
+                sys.exit("Cannot find 'genes.tsv' or 'features.tsv' file in the folder of test dataset.")
         if not os.path.exists(os.path.join(opt.testDS, 'barcodes.tsv')):
             sys.exit("Cannot find 'barcodes.tsv' file in the folder of test dataset.")
-
+            
+    #check gene list 
+    if opt.testGenes != 'none' and opt.testGenes.endswith('.csv'):
+        if not os.path.exists(opt.testGenes):
+            sys.exit("Cannot find CSV file to obtain the test gene list.")
+    
     #check coreNum
     maxCoreNum = multiprocessing.cpu_count()
     if opt.coreNum > maxCoreNum:
-        sys.exit("There are only %s cores availble, less than %s cores." % (maxCoreNum, opt.coreNum))
+        sys.exit("There are only %s cores available, less than %s cores." % (maxCoreNum, opt.coreNum))
         
     #pass argument check, show input data
     print('===================================================')
@@ -303,12 +345,14 @@ if __name__ == "__main__":
         print('Test data are in the file: %s' % opt.testDS)
     print('The correlation method: %s' % opt.testMethod)
     if keepZeros:
-        print('Keep genes with zero expreesion level: yes')
+        print('Keep genes with zero expression level: yes')
     else:
-        print('Keep genes with zero expreesion level: no')
+        print('Keep genes with zero expression level: no')
+    if opt.testGenes != 'none':
+        print('Test gene list: %s' % opt.testGenes)
     print('The number of cores to use: %s' % opt.coreNum)
     print('===================================================')
     
     #start to annotate test dataset
-    main(testType, opt.dFormat, opt.testDS, opt.refDS, refTypeList, keepZeros, testMethodList, opt.coreNum)
+    main(testType, opt.dFormat, opt.testDS, opt.testGenes, opt.refDS, refTypeList, keepZeros, testMethodList, opt.coreNum)
     #python scMatch.py --refDS FANTOM5 --dFormat csv --testDS GSE81861_Cell_Line_COUNT.csv --coreNum 4
