@@ -217,9 +217,9 @@ basal cell carcinoma cell line:TE 354.T.CNhs11932.10702-109G9,basal cell carcino
 "Basophils, donor1.CNhs12546.12241-129G9",basophil
 "Basophils, donor2.CNhs12563.12242-129H1",basophil
 "Basophils, donor3.CNhs12575.12243-129H2",basophil
-mesothelioma cell line:ACC-MESO-1.CNhs11263.10493-107B7,benign pleural mesothelioma cell line
-mesothelioma cell line:ACC-MESO-4.CNhs11264.10494-107B8,benign pleural mesothelioma cell line
-mesothelioma cell line:ONE58.CNhs13075.10858-111G3,benign pleural mesothelioma cell line
+mesothelioma cell line:ACC-MESO-1.CNhs11263.10493-107B7,mesothelioma cell line
+mesothelioma cell line:ACC-MESO-4.CNhs11264.10494-107B8,mesothelioma cell line
+mesothelioma cell line:ONE58.CNhs13075.10858-111G3,mesothelioma cell line
 bile duct carcinoma cell line:HuCCT1.CNhs10750.10432-106D9,bile duct carcinoma cell line
 bile duct carcinoma cell line:TFK-1.CNhs11265.10496-107C1,bile duct carcinoma cell line
 biphenotypic B myelomonocytic leukemia cell line:MV-4-11.CNhs11845.10718-109I7,biphenotypic B myelomonocytic leukemia cell line
@@ -602,21 +602,21 @@ lung adenocarcinoma cell line:PC-14.CNhs10726.10408-106B3,lung adenocarcinoma ce
 hepatic mesenchymal tumor cell line:LI90.CNhs11868.10778-110G4,malignant epithelioid hemangioendothelioma
 myxofibrosarcoma cell line:MFH-ino.CNhs11729.10600-108E6,malignant fibrous histiocytoma of bone cell line
 myxofibrosarcoma cell line:NMFH-1.CNhs11821.10684-109E9,malignant fibrous histiocytoma of bone cell line
-"mesothelioma cell line:Mero-14, tech_rep2.CNhs14376.10849-111F3",malignant mesothelioma cell line
-mesothelioma cell line:Mero-25.CNhs13066.10850-111F4,malignant mesothelioma cell line
-mesothelioma cell line:Mero-41.CNhs13067.10851-111F5,malignant mesothelioma cell line
-mesothelioma cell line:Mero-48a.CNhs13068.10852-111F6,malignant mesothelioma cell line
-mesothelioma cell line:Mero-82.CNhs13069.10853-111F7,malignant mesothelioma cell line
-mesothelioma cell line:Mero-83.CNhs13070.10854-111F8,malignant mesothelioma cell line
-mesothelioma cell line:Mero-84.CNhs13072.10855-111F9,malignant mesothelioma cell line
-mesothelioma cell line:Mero-95.CNhs13073.10856-111G1,malignant mesothelioma cell line
-mesothelioma cell line:NCI-H2052.CNhs13063.10847-111F1,malignant mesothelioma cell line
-mesothelioma cell line:NCI-H226.CNhs13062.10846-111E9,malignant mesothelioma cell line
-mesothelioma cell line:NCI-H2452.CNhs13064.10848-111F2,malignant mesothelioma cell line
-mesothelioma cell line:NCI-H28.CNhs13061.10845-111E8,malignant mesothelioma cell line
+"mesothelioma cell line:Mero-14, tech_rep2.CNhs14376.10849-111F3",mesothelioma cell line
+mesothelioma cell line:Mero-25.CNhs13066.10850-111F4,mesothelioma cell line
+mesothelioma cell line:Mero-41.CNhs13067.10851-111F5,mesothelioma cell line
+mesothelioma cell line:Mero-48a.CNhs13068.10852-111F6,mesothelioma cell line
+mesothelioma cell line:Mero-82.CNhs13069.10853-111F7,mesothelioma cell line
+mesothelioma cell line:Mero-83.CNhs13070.10854-111F8,mesothelioma cell line
+mesothelioma cell line:Mero-84.CNhs13072.10855-111F9,mesothelioma cell line
+mesothelioma cell line:Mero-95.CNhs13073.10856-111G1,mesothelioma cell line
+mesothelioma cell line:NCI-H2052.CNhs13063.10847-111F1,mesothelioma cell line
+mesothelioma cell line:NCI-H226.CNhs13062.10846-111E9,mesothelioma cell line
+mesothelioma cell line:NCI-H2452.CNhs13064.10848-111F2,mesothelioma cell line
+mesothelioma cell line:NCI-H28.CNhs13061.10845-111E8,mesothelioma cell line
 "schwannoma cell line:HS-PSS, tech_rep2.CNhs11245.10442-106F1",malignant peripheral nerve sheath tumor cell line
 schwannoma cell line:HS-PSS.CNhs11183.10442-106F1,malignant peripheral nerve sheath tumor cell line
-mesothelioma cell line:No36.CNhs13074.10857-111G2,malignant pleural mesothelioma cell line
+mesothelioma cell line:No36.CNhs13074.10857-111G2,mesothelioma cell line
 "Mallassez-derived cells, donor1 (MZH3).CNhs12538.12142-128E9",mallassez-derived epithelial cell
 "Mallassez-derived cells, donor2.CNhs13550.11929-125I3",mallassez-derived epithelial cell
 "Mallassez-derived cells, donor3.CNhs13551.11930-125I4",mallassez-derived epithelial cell
